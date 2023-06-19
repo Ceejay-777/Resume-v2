@@ -1,3 +1,22 @@
+:root {
+  --col-1: #ff7b00;
+  --col-2: #ff8800;
+  --col-3: #ff9500;
+  --col-4: #ffa200;
+  --col-5: #ffaa00;
+  --col-6: #ffb700;
+  --col-7: #ffc300;
+  --col-8: #ffd000;
+  --col-9: #ffdd00;
+  --col-10: #ffea00;
+  --col-11: #003049;
+  --col-12: #d62828;
+  --col-13: #f77f00;
+  --col-14: #fcbf49;
+  --col-15: #eae2b7;
+}
+
+
 * {
   padding: 0;
   margin: 0;

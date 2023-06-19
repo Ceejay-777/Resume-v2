@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Navbar from './navbar/Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Home'
+import MainSharedLayout from './sharedLayouts/mainSharedLayout'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route index element={<></>}/>
+        <Route path="/" element={<MainSharedLayout />}>
+          <Route index element={<Home />}/>
+          <Route path='about' element={<About />}/>
+          <Route path='projects' element={<Projects />}/>
+          <Route path='contact' element={<Contact />}/>
         </Route>
       </Routes>
     </Router>
