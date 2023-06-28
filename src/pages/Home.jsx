@@ -5,20 +5,35 @@ import Socials from '../reuseables/socials'
 
 const Home = () => {
   return (
-    <div>
-      <section className='main-intro'>
-        <div className="my-img-container">
-          <img src={user} alt="user" className='my-img'/>
-        </div>
+    <>
+      {/* <SectionIntro /> */}
+      <SectionExperience />
+    </>
+  )
+}
 
-        <div className='my-intro'>
-          <p>Hello There!</p>
-          <h1>I'm covenant</h1>
-          <h3>I'm a web developer</h3>
-          <Socials />
-        </div>
-      </section>
-    </div>
+const SectionIntro = () => {
+  return (
+    <div>
+    <section className='main-intro'>
+      <div className="my-img-container">
+        <img src={user} alt="user" className='my-img'/>
+      </div>
+
+      <div className='my-intro'>
+        <p>Hello There!</p>
+        <h1>I'm covenant</h1>
+        <h3>I'm a web developer</h3>
+        <Socials />
+      </div>
+    </section>
+  </div>
+  )
+}
+
+const SectionExperience = () => {
+  return (
+    <div>Experience</div>
   )
 }
 

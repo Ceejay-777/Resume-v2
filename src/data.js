@@ -1,7 +1,5 @@
 import facebook from './assets/Icons/facebook.svg'
 
-
-
 export const navLinks = ["Home", "About", "Projects", "Contact"]
 
 export const socialLinks = [
