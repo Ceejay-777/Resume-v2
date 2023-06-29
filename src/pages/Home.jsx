@@ -43,7 +43,7 @@ const SectionExperience = () => {
 
   return (
     <>
-      <h2 className='sectionTitle'>Experiences</h2>
+      <h2 className='sectionTitle'>Work Experience</h2>
 
       <div className='experiences'>
         {experiences.map((experience, index) => {
@@ -54,8 +54,19 @@ const SectionExperience = () => {
       </div>
       
       <div className="expInfo">
-        {current.nameTag}
+        <h2>{current.title}</h2>
+        <p>{current.nameTag}</p>
+        <h4>{current.date}</h4>
+        <ul>
+        {current.duties.map((duty, index) => {
+          return (
+            <li key={index}>{duty}</li>
+          )
+        })}
+        </ul>
       </div>
+
+      <button>See More</button>
     </>
   )
 }

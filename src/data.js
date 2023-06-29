@@ -17,12 +17,12 @@ export const experiences = [
         name: 'Brainbench Academy',
         location: "Ado-Ekiti, Ekiti State",
         date: "April 2022 - September 2022",
-        duties : {
-            one: 'one',
-            two: 'two',
-            three:'three',
-            four: 'four'
-        }
+        duties : [
+            'one',
+            'two',
+            'three',
+            'four'
+        ]
     },
 
     {
@@ -31,10 +31,12 @@ export const experiences = [
         name: 'Kinplus Technologies ',
         location: "Ado-Ekiti, Ekiti State",
         date: "April 2023 - Present",
-        duties : {
-            one: 'one',
-            two: 'two',
-            three:'three',
-        }
+        duties : [
+            'one',
+            'two',
+            'three',
+            'four',
+            'five'
+        ]
     }
 ]
