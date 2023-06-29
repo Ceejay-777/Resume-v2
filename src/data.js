@@ -9,3 +9,32 @@ export const socialLinks = [
     {account: "Whatsapp", icon: facebook},
     {account: "Github", icon: facebook}
 ]
+
+export const experiences = [
+    {
+        nameTag: "BrainBench",
+        title: "Backend Junior Developer(ML), Intern",
+        name: 'Brainbench Academy',
+        location: "Ado-Ekiti, Ekiti State",
+        date: "April 2022 - September 2022",
+        duties : {
+            one: 'one',
+            two: 'two',
+            three:'three',
+            four: 'four'
+        }
+    },
+
+    {
+        nameTag: "Kinplus",
+        title: "Frontend Web developer, Intern",
+        name: 'Kinplus Technologies ',
+        location: "Ado-Ekiti, Ekiti State",
+        date: "April 2023 - Present",
+        duties : {
+            one: 'one',
+            two: 'two',
+            three:'three',
+        }
+    }
+]

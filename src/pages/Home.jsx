@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import user from '../assets/Icons/user.svg'
 import Socials from '../reuseables/socials'
+import { experiences } from '../data'
 
 
 const Home = () => {
@@ -32,8 +33,30 @@ const SectionIntro = () => {
 }
 
 const SectionExperience = () => {
+  const [currentExp, setCurrentExp] = useState('BrainBench')
+
+  const current = experiences.find((experience) => experience.nameTag === currentExp)
+
+  const handleExp = (event) => {
+    setCurrentExp(event.target.textContent)
+  }
+
   return (
-    <div>Experience</div>
+    <>
+      <h2 className='sectionTitle'>Experiences</h2>
+
+      <div className='experiences'>
+        {experiences.map((experience, index) => {
+          return (
+            <button key={index}className='exp-btn' onClick={handleExp}>{experience.nameTag}</button>
+            )
+          })}
+      </div>
+      
+      <div className="expInfo">
+        {current.nameTag}
+      </div>
+    </>
   )
 }
 
