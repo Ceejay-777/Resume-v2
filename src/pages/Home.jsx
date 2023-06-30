@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import user from '../assets/Icons/user.svg'
 import Socials from '../reuseables/socials'
-import { experiences } from '../data'
+import { experiences, projects } from '../data'
+
 
 
 const Home = () => {
   return (
     <>
       {/* <SectionIntro /> */}
-      <SectionExperience />
+      {/* <SectionExperience /> */}
+      <SectionProjects /> 
     </>
   )
 }
@@ -67,6 +69,27 @@ const SectionExperience = () => {
       </div>
 
       <button>See More</button>
+    </>
+  )
+}
+
+const SectionProjects = () => {
+  return(
+    <>
+      <h2>Projects</h2>
+
+      <div className='projects'>
+        {projects.map((project, index) => {
+          const {name, id, img, info} = project
+          return (
+            <div className="project" key={id}>
+              <h3>{index}</h3>
+              <img src={img} alt={name}/>
+              <p>{info}</p>
+            </div>
+          )
+        })}
+      </div>
     </>
   )
 }

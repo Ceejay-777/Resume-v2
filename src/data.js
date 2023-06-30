@@ -1,5 +1,7 @@
 import facebook from './assets/Icons/facebook.svg'
 
+import image from 'C:/Users/DR ADEOSUN/Desktop/Code/Resume/my-resume/src/assets/Project_images/project2.jpg'
+
 export const navLinks = ["Home", "About", "Projects", "Contact"]
 
 export const socialLinks = [
@@ -39,4 +41,27 @@ export const experiences = [
             'five'
         ]
     }
+]
+
+export const projects = [ 
+    {
+        id: 1,
+        name: 'first',
+        img: image,
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
+    },
+    {
+        id: 2,
+        name: 'second',
+        img: 'C:/Users/DR ADEOSUN/Desktop/Code/Resume/my-resume/src/assets/Project_images/project2.jpg',
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
+    },
+    {
+        id: 3,
+        name: 'third',
+        img: './assets/Project_images/project2.jpg',
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
+    },
+
+    
 ]
