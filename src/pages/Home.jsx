@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import user from '../assets/Icons/user.svg'
 import Socials from '../reuseables/socials'
 import { experiences, projects } from '../data'
+import image2 from "../assets/Project_images/project2.jpg"
 
 
 
@@ -74,6 +75,9 @@ const SectionExperience = () => {
 }
 
 const SectionProjects = () => {
+  // const componentPath = new URL('.', import.meta.url).pathname
+  // console.log(componentPath)
+
   return(
     <>
       <h2>Projects</h2>
@@ -83,12 +87,13 @@ const SectionProjects = () => {
           const {name, id, img, info} = project
           return (
             <div className="project" key={id}>
-              <h3>{index}</h3>
-              <img src={img} alt={name}/>
+              <h3>{index + 1}</h3>
+              <img src={img} alt={name} className='project-img'/>
               <p>{info}</p>
             </div>
           )
         })}
+        <button>Show all</button>
       </div>
     </>
   )
