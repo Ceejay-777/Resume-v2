@@ -85,13 +85,15 @@ const SectionProjects = () => {
       <div className='projects'>
         {projects.map((project, index) => {
           const {name, id, img, info} = project
-          return (
-            <div className="project" key={id}>
-              <h3>{index + 1}</h3>
-              <img src={img} alt={name} className='project-img'/>
-              <p>{info}</p>
-            </div>
-          )
+          if(index < 2) {
+            return (
+              <div className="project" key={id}>
+                <h3>{index + 1}</h3>
+                <img src={img} alt={name} className='project-img'/>
+                <p>{info}</p>
+              </div>
+            )
+          }
         })}
         <button>Show all</button>
       </div>
