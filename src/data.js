@@ -62,6 +62,12 @@ export const projects = [
         img: '.../src/assets/Project_images/project2.jpg',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
     },
+    {
+        id: 3,
+        name: 'third',
+        img: '.../src/assets/Project_images/project2.jpg',
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
+    },
 
     
 ]
