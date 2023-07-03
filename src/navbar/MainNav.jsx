@@ -5,11 +5,11 @@ import { navLinks } from '../data'
 const MainNav = () => {
   return (
     <nav>
-        <ul>
+        <ul className='navlinks'>
             {navLinks.map((navLink, ID) => {
                 return (
-                    <li key={ID}>
-                        <p>{navLink}</p>
+                    <li key={ID} className='navlink'>
+                        {navLink}
                     </li>
                 )
             })}

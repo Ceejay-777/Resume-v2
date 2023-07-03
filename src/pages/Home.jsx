@@ -9,9 +9,9 @@ import image2 from "../assets/Project_images/project2.jpg"
 const Home = () => {
   return (
     <main className='main'>
-      {/* <SectionIntro /> */}
+      <SectionIntro />
       {/* <SectionExperience /> */}
-      <SectionProjects /> 
+      {/* <SectionProjects />  */}
     </main>
   )
 }
