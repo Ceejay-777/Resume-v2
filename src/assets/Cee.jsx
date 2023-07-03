@@ -6,14 +6,14 @@ const Cee = () => {
       version="1.1"
       id="ceejay_logo"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       x="0px"
       y="0px"
       width="100%"
       viewBox="80 80 340 340"
-      enable-background="new 0 0 496 496"
-      xml:space="preserve"
-      class="ceejay-logo"
+      enableBackground="new 0 0 496 496"
+      xmlSpace="preserve"
+      className="ceejay-logo"
     >
       <path
         fill="#d4af37"

@@ -48,9 +48,6 @@ body {
   /* border: 1px solid black; */
 }
 
-/* #ceejay-logo > path {
-  fill: #fff;
-} */
 
 .nav-control {
   width: 25px;
@@ -97,7 +94,6 @@ body {
   text-align: center;
   color: var(--complementary);
   transition: all 0.2s ease-in-out;
-
 }
 
 .navlink:hover {
@@ -108,13 +104,39 @@ body {
   transform: translateX(0%);
 }
 
-.main-intro {
-  border: 1px solid black;
+.my-img-container {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 40px;
+}
+
+.my-intro {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.my-intro > p {
+  font-weight: 600;
+}
+
+.my-intro > h1 {
+  font-size: 2rem;
+}
+
+.my-intro > h4 {
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.accent {
+  color: var(--secondary)
 }
 
 .social-links {
   display: flex;
   justify-content: space-between;
+  /* gap: px; */
 }
 
 .social-link {
@@ -124,11 +146,15 @@ body {
 }
 
 .social-link-icon {
-  width: 25px;
-  border: 1px solid black;
-  padding: 5px;
+  width: 20px;
+  padding: 4px;
   box-sizing: content-box;
-  border-radius: 10px;
+  border-radius: 25%;
+  background-color: var(--primary);
+}
+
+.social-link-name {
+  font-size: 0.5rem;
 }
 
 .project-img {
