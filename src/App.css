@@ -1,5 +1,5 @@
 :root {
-  --col-1: #ff7b00; 
+  /* --col-1: #ff7b00; 
   --col-2: #ff8800;
   --col-3: #ff9500;
   --col-4: #ffa200;
@@ -13,7 +13,11 @@
   --col-12: #d62828;
   --col-13: #f77f00;
   --col-14: #fcbf49;
-  --col-15: #eae2b7;
+  --col-15: #eae2b7; */
+  --primary: #2c3e50;
+  --secondary: #d4af37;
+  --accent: #d7b9c4;
+  --complementary: #a9a9a9;
 }
 
 
@@ -32,10 +36,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding-right: 20px;
   position: fixed;
   width: 100%;
-  background-color: var(--col-6);
+  background-color: var(--primary);
 }
 
 .ceejay-logo {
@@ -54,6 +58,11 @@ body {
   border-radius:  50%;
   padding: 3px;
   box-sizing: content-box;
+  color: var(--secondary)
+}
+
+.nav-control:hover {
+  transform: scale(1.1);
 }
 
 .nav-close {
