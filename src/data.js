@@ -43,6 +43,25 @@ export const experiences = [
     }
 ]
 
+export const skillset = [
+    {
+        skill: "HTML",
+        rating: 90
+    },
+    {
+        skill: "HTML",
+        rating: 90
+    },
+    {
+        skill: "HTML",
+        rating: 90
+    },
+    {
+        skill: "HTML",
+        rating: 90
+    },
+]
+
 export const projects = [ 
     {
         id: 1,

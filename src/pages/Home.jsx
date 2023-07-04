@@ -7,9 +7,9 @@ import image2 from "../assets/Project_images/project2.jpg";
 const Home = () => {
   return (
     <main className="main">
-      <SectionIntro />
-      <SectionExperience />
-      <SectionProjects /> 
+      {/* <SectionIntro /> */}
+      {/* <SectionExperience /> */}
+      {/* <SectionProjects />  */}
     </main>
   );
 };
