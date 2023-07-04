@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import user from "../assets/Icons/user.svg";
 import Socials from "../reuseables/socials";
-import { experiences, projects } from "../data";
+import { experiences, projects , skillset} from "../data";
 import image2 from "../assets/Project_images/project2.jpg";
 
 const Home = () => {
   return (
     <main className="main">
       {/* <SectionIntro /> */}
+      <SectionSkillset />
       {/* <SectionExperience /> */}
       {/* <SectionProjects />  */}
     </main>
@@ -32,6 +33,24 @@ const SectionIntro = () => {
     </section>
   );
 };
+
+const SectionSkillset = () => {
+  return (
+    <section>
+      {skillset.map((aSkill) => {
+        const {skill, rating} = aSkill
+        return (
+          <>
+            <p>{skill}</p>
+            <div className="skill-container">
+              <div className="skill" style={{width: `${rating}%`}}></div>
+            </div>
+          </>
+        )
+      })}
+    </section>
+  )
+}
 
 const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");

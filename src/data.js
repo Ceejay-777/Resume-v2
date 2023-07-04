@@ -58,7 +58,7 @@ export const skillset = [
     },
     {
         skill: "HTML",
-        rating: 90
+        rating: 60
     },
 ]
 

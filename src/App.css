@@ -166,6 +166,16 @@ body {
   font-size: 0.5rem;
 }
 
+.skill-container {
+  border: 1px solid black;
+  height: 5px;
+}
+
+.skill {
+  height: 100%;
+  background-color: black;
+}
+
 .project-img {
   width: 200px;
 }
