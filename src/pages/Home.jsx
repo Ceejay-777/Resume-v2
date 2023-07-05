@@ -37,15 +37,21 @@ const SectionIntro = () => {
 const SectionSkillset = () => {
   return (
     <section>
+      <h2 className="sectionTitle">Skill Set</h2>
+
       {skillset.map((aSkill) => {
         const {skill, rating} = aSkill
         return (
-          <>
-            <p>{skill}</p>
+          <div className="aSkill-container">
+            <div className="skillTexts">
+              <p className="skillText">{skill}</p>
+              <p className="skillPercent skillText">{`${rating}%`}</p>
+            </div>
+
             <div className="skill-container">
               <div className="skill" style={{width: `${rating}%`}}></div>
             </div>
-          </>
+          </div>
         )
       })}
     </section>
@@ -94,12 +100,10 @@ const SectionExperience = () => {
 };
 
 const SectionProjects = () => {
-  // const componentPath = new URL('.', import.meta.url).pathname
-  // console.log(componentPath)
 
   return (
     <>
-      <h2>Projects</h2>
+      <h2 className="sectionTitle">Projects</h2>
 
       <div className="projects">
         {projects.map((project, index) => {

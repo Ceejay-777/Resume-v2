@@ -45,20 +45,24 @@ export const experiences = [
 
 export const skillset = [
     {
-        skill: "HTML",
-        rating: 90
+        skill: "Python",
+        rating: 80
     },
     {
         skill: "HTML",
         rating: 90
     },
     {
-        skill: "HTML",
-        rating: 90
+        skill: "CSS",
+        rating: 80
     },
     {
-        skill: "HTML",
-        rating: 60
+        skill: "JavaScript",
+        rating: 85
+    },
+    {
+        skill: "React",
+        rating: 70
     },
 ]
 

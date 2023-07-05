@@ -166,14 +166,38 @@ body {
   font-size: 0.5rem;
 }
 
+.aSkill-container {
+  width: 95%;
+  margin: 0 auto; 
+  margin-bottom: 15px;
+}
+
+.skillTexts {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.skillText {
+  font-size: 0.65rem;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.skillPercent {
+  font-weight: 500;
+}
 .skill-container {
-  border: 1px solid black;
+  border: 1px solid var(--primary);
+  background-color: var(--complementary);
   height: 5px;
+  border-radius: 5px;
 }
 
 .skill {
   height: 100%;
-  background-color: black;
+  background-color: var(--primary);
+  border-radius: 3px;
 }
 
 .project-img {
