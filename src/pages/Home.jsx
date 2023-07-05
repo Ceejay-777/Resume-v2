@@ -2,22 +2,21 @@ import React, { useEffect, useState } from "react";
 import user from "../assets/Icons/user.svg";
 import Socials from "../reuseables/socials";
 import { experiences, projects , skillset} from "../data";
-import image2 from "../assets/Project_images/project2.jpg";
 
 const Home = () => {
   return (
     <main className="main">
-      {/* <SectionIntro /> */}
-      {/* <SectionSkillset /> */}
+      <SectionIntro />
+      <SectionSkillset />
       <SectionExperience />
-      {/* <SectionProjects />  */}
+      <SectionProjects /> 
     </main>
   );
 };
 
 const SectionIntro = () => {
   return (
-    <section className="main-intro">
+    <section className="section section-intro">
       <div className="my-img-container">
         <img src={user} alt="user" className="my-img" />
       </div>
@@ -36,7 +35,7 @@ const SectionIntro = () => {
 
 const SectionSkillset = () => {
   return (
-    <section className="section-skillset">
+    <section className="section section-skillset">
       <h2 className="sectionTitle">Skill Set</h2>
 
       {skillset.map((aSkill) => {
@@ -70,13 +69,13 @@ const SectionExperience = () => {
   };
 
   return (
-    <section className="section-exp">
+    <section className="section section-exp">
       <h2 className="sectionTitle">Work Experience</h2>
 
       <div className="exp-opt-bar">
         {experiences.map((experience, index) => {
           return (
-            <button key={index} className={`btn ${experience.nameTag === currentExp && 'active-exp'}`} onClick={handleExp}>
+            <button key={index} className={`tag ${experience.nameTag === currentExp && 'active-exp'}`} onClick={handleExp}>
               {experience.nameTag}
             </button>
           );
@@ -102,7 +101,7 @@ const SectionExperience = () => {
 const SectionProjects = () => {
 
   return (
-    <>
+    <section className="section section-projects">
       <h2 className="sectionTitle">Projects</h2>
 
       <div className="projects">
@@ -118,9 +117,9 @@ const SectionProjects = () => {
             );
           }
         })}
-        <button>Show all</button>
+        <button className="btn">Show all</button>
       </div>
-    </>
+    </section>
   );
 };
 
