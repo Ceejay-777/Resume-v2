@@ -14,7 +14,7 @@
   --col-13: #f77f00;
   --col-14: #fcbf49;
   --col-15: #eae2b7; */
-  --primary: #2c3e50;
+  --primary: rgb(44, 62, 80);
   --secondary: #d4af37;
   --accent: #d7b9c4;
   --complementary: #a9a9a9;
@@ -187,6 +187,7 @@ body {
 .skillPercent {
   font-weight: 500;
 }
+
 .skill-container {
   border: 1px solid var(--primary);
   background-color: var(--complementary);
@@ -198,6 +199,58 @@ body {
   height: 100%;
   background-color: var(--primary);
   border-radius: 3px;
+}
+
+.section-exp {
+  padding: 0 20px;
+}
+
+.exp-opt-bar {
+  display: flex;
+  gap: 10px;
+  padding: 10px ;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+
+.btn {
+  padding: 0.33em 0.5em;
+  color: var(--complementary);
+  background-color: var(--primary);
+  border-radius: 5px; 
+  border: none;
+  font-weight: bold;
+  /* border: 2px solid var(--seconda/ry) */
+}
+
+.active-exp {
+  color: var(--primary);
+  background-color: var(--complementary);
+}
+
+.exp-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.exp-company {
+  font-weight: 600;
+  margin-bottom: 5px;
+  border: 2px solid var(--secondary);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.exp-date {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.exp-duty {
+  list-style: none;
 }
 
 .project-img {

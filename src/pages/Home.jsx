@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <main className="main">
       {/* <SectionIntro /> */}
-      <SectionSkillset />
-      {/* <SectionExperience /> */}
+      {/* <SectionSkillset /> */}
+      <SectionExperience />
       {/* <SectionProjects />  */}
     </main>
   );
@@ -36,7 +36,7 @@ const SectionIntro = () => {
 
 const SectionSkillset = () => {
   return (
-    <section>
+    <section className="section-skillset">
       <h2 className="sectionTitle">Skill Set</h2>
 
       {skillset.map((aSkill) => {
@@ -70,32 +70,32 @@ const SectionExperience = () => {
   };
 
   return (
-    <>
+    <section className="section-exp">
       <h2 className="sectionTitle">Work Experience</h2>
 
-      <div className="experiences">
+      <div className="exp-opt-bar">
         {experiences.map((experience, index) => {
           return (
-            <button key={index} className="exp-btn" onClick={handleExp}>
+            <button key={index} className={`btn ${experience.nameTag === currentExp && 'active-exp'}`} onClick={handleExp}>
               {experience.nameTag}
             </button>
           );
         })}
       </div>
 
-      <div className="expInfo">
-        <h2>{current.title}</h2>
-        <p>{current.nameTag}</p>
-        <h4>{current.date}</h4>
+      <div className="exp-info">
+        <h4 className="exp-title">{current.title}</h4>
+        <p className="exp-company">{current.company}</p>
+        <p className="exp-date">{current.date}</p>
         <ul>
           {current.duties.map((duty, index) => {
-            return <li key={index}>{duty}</li>;
+            return <li key={index} className="exp-duty">{duty}</li>;
           })}
         </ul>
       </div>
 
-      <button>See More</button>
-    </>
+      <button className="exp-see-more btn">See More</button>
+    </section>
   );
 };
 

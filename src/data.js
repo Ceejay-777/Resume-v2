@@ -16,7 +16,7 @@ export const experiences = [
     {
         nameTag: "BrainBench",
         title: "Backend Junior Developer(ML), Intern",
-        name: 'Brainbench Academy',
+        company: 'Brainbench Academy',
         location: "Ado-Ekiti, Ekiti State",
         date: "April 2022 - September 2022",
         duties : [
@@ -30,7 +30,7 @@ export const experiences = [
     {
         nameTag: "Kinplus",
         title: "Frontend Web developer, Intern",
-        name: 'Kinplus Technologies ',
+        company: 'Kinplus Technologies ',
         location: "Ado-Ekiti, Ekiti State",
         date: "April 2023 - Present",
         duties : [
