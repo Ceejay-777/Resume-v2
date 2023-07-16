@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <main className="main">
       <SectionIntro />
-      <SectionSkillset />
       <SectionExperience />
+      <SectionSkillset />
       <SectionProjects /> 
     </main>
   );
