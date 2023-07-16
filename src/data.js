@@ -1,7 +1,10 @@
 import facebook from './assets/Icons/facebook.svg'
 
-import user from "./assets/Icons/user.svg"
+import card1 from "./assets/Project_images/card_details/01.jpg"
 
+import card2 from "./assets/Project_images/card_details/02.jpg"
+
+import card3 from "./assets/Project_images/card_details/03.jpg"
 
 export const navLinks = ["Home", "About", "Projects", "Contact"]
 
@@ -76,25 +79,41 @@ export const projects = [
     {
         id: 1,
         name: 'first',
-        img: "./assets/Project_images/project2.jpg",
+        images: [
+            {img1 : card1,
+            img2 : card2,
+            img3 : card3},
+        ],
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
     },
     {
         id: 2,
         name: 'second',
-        img: "./assets/Project_images/project2.jpg",
+        images: [
+            {img1 : card1,
+            img2 : card2,
+            img3 : card3},
+        ],
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
     },
     {
         id: 3,
         name: 'third',
-        img: '.../src/assets/Project_images/project2.jpg',
+        images: [
+            {img1 : card1,
+            img2 : card2,
+            img3 : card3},
+        ],
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
     },
     {
         id: 3,
         name: 'third',
-        img: '.../src/assets/Project_images/project2.jpg',
+        images: [
+            {img1 : card1,
+            img2 : card2,
+            img3 : card3},
+        ],
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.'
     },
 
