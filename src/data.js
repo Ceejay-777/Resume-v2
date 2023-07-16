@@ -1,6 +1,5 @@
 import facebook from './assets/Icons/facebook.svg'
 
-import image from './assets/Project_images/project2.jpg'
 
 export const navLinks = ["Home", "About", "Projects", "Contact"]
 
@@ -63,6 +62,10 @@ export const skillset = [
     {
         skill: "React",
         rating: 70
+    },
+    {
+        skill: "Tailwind CSS",
+        rating: 30
     },
 ]
 
