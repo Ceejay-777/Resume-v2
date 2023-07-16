@@ -2,7 +2,6 @@ import React from "react";
 import { projects } from "../../data";
 
 export const SectionProjects = () => {
-
   return (
     <section className="section section-projects">
       <h2 className="sectionTitle">Projects</h2>
@@ -15,9 +14,7 @@ export const SectionProjects = () => {
               <div className="project" key={id}>
                 <h3>{index + 1}</h3>
                 {images.map((img, index) => {
-                  return(
-                  <img src={img} alt="Project" key={index}/>
-                  )
+                  return <img src={img} alt="Project" key={index} className={index === 3 ? "project-img main-project-img" : "project-img"}/>;
                 })}
                 <p>{info}</p>
               </div>
