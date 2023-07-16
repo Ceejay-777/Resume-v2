@@ -1,5 +1,7 @@
 import facebook from './assets/Icons/facebook.svg'
 
+import user from "./assets/Icons/user.svg"
+
 
 export const navLinks = ["Home", "About", "Projects", "Contact"]
 
@@ -37,7 +39,8 @@ export const experiences = [
             'two',
             'three',
             'four',
-            'five'
+            'five',
+            'six'
         ]
     }
 ]

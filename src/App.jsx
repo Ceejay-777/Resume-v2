@@ -1,11 +1,10 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Home from './pages/Home'
+import Home from './pages/Home/Home.jsx'
 import About from './pages/About'
 import Projects from './pages/Projects'
-import Contact from './pages/Home'
+import Contact from './pages/Home/Home'
 import MainSharedLayout from './sharedLayouts/mainSharedLayout'
-
 
 function App() {
 
