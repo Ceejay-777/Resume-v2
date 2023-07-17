@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../../data";
+import { projects } from "../../projectsdata.js";
 
 export const SectionProjects = () => {
   return (
@@ -12,10 +12,12 @@ export const SectionProjects = () => {
           if (index < 2) {
             return (
               <div className="project" key={id}>
-                <h3>{index + 1}</h3>
-                {images.map((img, index) => {
-                  return <img src={img} alt="Project" key={index} className={index === 3 ? "project-img main-project-img" : "project-img"}/>;
-                })}
+                <h1>{index + 1}</h1>
+                <div className="project-imgs">
+                  {images.map((img, index) => {
+                    return <img src={img} alt="Project" key={index} className={index === 3 ? "project-img main-project-img" : "project-img"}/>;
+                  })}
+                </div>
                 <p>{info}</p>
               </div>
             );

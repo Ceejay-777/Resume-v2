@@ -1,11 +1,5 @@
 import facebook from "./assets/Icons/facebook.svg";
 
-import card1 from "./assets/Project_images/card_details/01.jpg";
-
-import card2 from "./assets/Project_images/card_details/02.jpg";
-
-import card3 from "./assets/Project_images/card_details/03.jpg";
-
 export const navLinks = ["Home", "About", "Projects", "Contact"];
 
 export const socialLinks = [
@@ -63,29 +57,4 @@ export const skillset = [
   },
 ];
 
-export const projects = [
-  {
-    id: 1,
-    name: "first",
-    images: [card1, card2, card3],
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
-  },
-  {
-    id: 2,
-    name: "second",
-    images: [card1, card2, card3],
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
-  },
-  {
-    id: 3,
-    name: "third",
-    images: [card1, card2, card3],
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
-  },
-  {
-    id: 3,
-    name: "third",
-    images: [card1, card2, card3],
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
-  },
-];
+
