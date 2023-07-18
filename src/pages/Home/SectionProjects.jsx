@@ -13,11 +13,30 @@ export const SectionProjects = () => {
             return (
               <div className="project" key={id}>
                 <h1>{index + 1}</h1>
+
                 <div className="project-imgs">
-                  {images.map((img, index) => {
-                    return <img src={img} alt="Project" key={index} className={index === 3 ? "project-img main-project-img" : "project-img"}/>;
-                  })}
+                  <div>
+                    <img
+                      src={images[0]}
+                      alt="Project"
+                      className=" project-img main-project-img"
+                    />
+                  </div>
+
+                  <div className="more-project-img">
+                    {images.slice(1).map((img, index) => {
+                      return (
+                        <img
+                          src={img}
+                          alt="Project"
+                          key={index}
+                          className={"project-img"}
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
+
                 <p>{info}</p>
               </div>
             );
