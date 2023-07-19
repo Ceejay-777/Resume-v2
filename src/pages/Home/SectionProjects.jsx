@@ -26,12 +26,14 @@ export const SectionProjects = () => {
                   <div className="more-project-img">
                     {images.slice(1).map((img, index) => {
                       return (
-                        <img
-                          src={img}
-                          alt="Project"
-                          key={index}
-                          className={"project-img"}
-                        />
+                        <div className="project-img-container">
+                          <img
+                            src={img}
+                            alt="Project"
+                            key={index}
+                            className={"project-img"}
+                          />
+                        </div>
                       );
                     })}
                   </div>
