@@ -9,7 +9,7 @@ const Home = () => {
       {/* <SectionIntro /> */}
       {/* <SectionExperience /> */}
       {/* <SectionSkillset /> */}
-      <SectionProjects /> 
+      <SectionProjects num = {2}/> 
     </main>
   );
 };

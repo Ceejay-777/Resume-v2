@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "../../projectsdata.js";
 
-export const SectionProjects = () => {
+export const SectionProjects = ({num}) => {
   return (
     <section className="section section-projects">
       <h2 className="sectionTitle">Projects</h2>
@@ -9,10 +9,13 @@ export const SectionProjects = () => {
       <div className="projects">
         {projects.map((project, index) => {
           const { name, id, images, info } = project;
-          if (index < 2) {
+          if (index < num) {
             return (
               <div className="project" key={id}>
-                <h1>{index + 1}</h1>
+                <div className="project-header">
+                  <h1>{index + 1}.</h1>
+                  <h1>{name} project</h1>
+                </div>
 
                 <div className="project-imgs">
                   <div>
