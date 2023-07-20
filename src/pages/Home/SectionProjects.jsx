@@ -13,8 +13,8 @@ export const SectionProjects = ({num}) => {
             return (
               <div className="project" key={id}>
                 <div className="project-header">
-                  <h1>{index + 1}.</h1>
-                  <h1>{name} project</h1>
+                  <h2>{index + 1}.</h2>
+                  <h2>{name} project</h2>
                 </div>
 
                 <div className="project-imgs">
@@ -42,7 +42,7 @@ export const SectionProjects = ({num}) => {
                   </div>
                 </div>
 
-                <p>{info}</p>
+                <p className="project-info">{info}</p>
               </div>
             );
           }
