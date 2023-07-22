@@ -8,9 +8,9 @@ import { projects } from "../../projectsdata";
 const Home = () => {
   return (
     <main className="main">
-      {/* <SectionIntro /> */}
-      {/* <SectionExperience /> */}
-      {/* <SectionSkillset /> */}
+      <SectionIntro />
+      <SectionExperience />
+      <SectionSkillset />
       <SectionProjects main = {false} num = {2}/> 
     </main>
   );

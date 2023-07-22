@@ -2,8 +2,7 @@ import React from "react";
 import { projects } from "../../projectsdata.js";
 import { Link } from "react-router-dom";
 
-
-export const SectionProjects = ({main, num}) => {
+export const SectionProjects = ({ main, num }) => {
   return (
     <section className="section section-projects">
       <h2 className="sectionTitle">Projects</h2>
@@ -28,20 +27,22 @@ export const SectionProjects = ({main, num}) => {
                     />
                   </div>
 
-                  {main && <div className="more-project-img">
-                    {images.slice(1).map((img, index) => {
-                      return (
-                        <div className="project-img-container">
-                          <img
-                            src={img}
-                            alt="Project"
-                            key={index}
-                            className={"project-img"}
-                          />
-                        </div>
-                      );
-                    })}
-                  </div>}
+                  {main && (
+                    <div className="more-project-img">
+                      {images.slice(1).map((img, index) => {
+                        return (
+                          <div className="project-img-container">
+                            <img
+                              src={img}
+                              alt="Project"
+                              key={index}
+                              className={"project-img"}
+                            />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
 
                 <p className="project-info">{info}</p>
@@ -49,7 +50,12 @@ export const SectionProjects = ({main, num}) => {
             );
           }
         })}
-        {main || <Link to="/products" className="links"><button className="btn">Show all</button></Link> }
+        {main || (
+          <Link to="/projects">
+            <button className="btn">Show all</button>
+            {/* Okay */}
+          </Link>
+        )}
       </div>
     </section>
   );
