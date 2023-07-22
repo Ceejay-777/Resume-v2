@@ -8,8 +8,6 @@ import horizon3 from "./assets/Project_images/horizon/horizon3.JPG"
 import horizon4 from "./assets/Project_images/horizon/horizon4.JPG"
 
 
-
-
 export const projects = [
     {
         id: 1,

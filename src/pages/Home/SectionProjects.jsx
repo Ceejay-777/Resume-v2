@@ -1,5 +1,7 @@
 import React from "react";
 import { projects } from "../../projectsdata.js";
+import { Link } from "react-router-dom";
+
 
 export const SectionProjects = ({main, num}) => {
   return (
@@ -47,7 +49,7 @@ export const SectionProjects = ({main, num}) => {
             );
           }
         })}
-        <button className="btn">Show all</button>
+        {main || <Link to="/products" className="links"><button className="btn">Show all</button></Link> }
       </div>
     </section>
   );
