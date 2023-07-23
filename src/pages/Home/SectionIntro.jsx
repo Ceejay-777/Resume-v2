@@ -1,12 +1,10 @@
-import Close from "../../assets/Icons/user.svg";
+import MyImage from "../../reuseables/MyImage"
 import Socials from "../../reuseables/socials";
 
 const SectionIntro = () => {
     return (
       <section className="section section-intro">
-        <div className="my-img-container">
-          <img src={Close} alt="user" className="my-img" />
-        </div>
+        <MyImage />
   
         <div className="my-intro">
           <p>Hello There!</p>

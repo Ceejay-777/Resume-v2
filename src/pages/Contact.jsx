@@ -1,9 +1,11 @@
 import React from "react";
+import MyImage from "../reuseables/MyImage";
 
 const Contact = () => {
   return (
       <div className="main">
-        <h2>Contact</h2>
+        <MyImage />
+        <h1 className="sectionTitle">About Me</h1>
       </div>);
 };
 
