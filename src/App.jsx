@@ -3,8 +3,10 @@ import './App.css'
 import Home from './pages/Home/Home.jsx'
 import About from './pages/About'
 import Projects from './pages/Projects'
-import Contact from './pages/Home/Home'
+import Contact from './pages/Contact'
 import MainSharedLayout from './sharedLayouts/mainSharedLayout'
+
+Contact
 
 function App() {
 
@@ -13,7 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainSharedLayout />}>
-            <Route index element={<Home />}/>
+            <Route index element={<Contact />}/>
             <Route path='about' element={<About />}/>
             <Route path='projects' element={<Projects />}/>
             <Route path='contact' element={<Contact />}/>

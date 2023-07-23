@@ -1,9 +1,6 @@
 import Close from "../../assets/Icons/user.svg";
 import Socials from "../../reuseables/socials";
 
-
-
-
 const SectionIntro = () => {
     return (
       <section className="section section-intro">
