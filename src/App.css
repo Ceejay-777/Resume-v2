@@ -325,7 +325,7 @@ a:-webkit-any-link {
 
 .skillbar {
   display: flex;
-  gap: 10px;s;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
