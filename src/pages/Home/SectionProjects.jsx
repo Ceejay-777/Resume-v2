@@ -1,5 +1,4 @@
 import { MyProjects } from "../../reuseables/MyProjects";
-import React from "react";
 
 const SectionProjects = () => {
   return (
@@ -11,3 +10,4 @@ const SectionProjects = () => {
 };
 
 export default SectionProjects
+
