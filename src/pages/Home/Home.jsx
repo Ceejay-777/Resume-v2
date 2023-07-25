@@ -11,7 +11,7 @@ const Home = () => {
       <SectionIntro />
       <SectionExperience />
       <SectionSkillset />
-      <SectionProjects main = {false} num = {2}/> 
+      <SectionProjects/> 
     </main>
   );
 };
