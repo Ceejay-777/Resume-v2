@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../projectsdata";
 
-export const SectionProjects = ({ main, num }) => {
+export const MyProjects = ({ main, num }) => {
   return (
-    <section className="section section-projects">
-      <h2 className="sectionTitle">Projects</h2>
+    
 
       <div className="projects">
         {projects.map((project, index) => {
@@ -57,6 +56,5 @@ export const SectionProjects = ({ main, num }) => {
           </Link>
         )}
       </div>
-    </section>
   );
 };

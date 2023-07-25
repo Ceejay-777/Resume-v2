@@ -2,7 +2,6 @@ import SectionIntro from "./SectionIntro";
 import { SectionExperience } from "./SectionExperience";
 import { SectionSkillset } from "./SectionSkillset";
 import { SectionProjects } from "./SectionProjects";
-import { projects } from "../../projectsdata";
 
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
       <SectionIntro />
       <SectionExperience />
       <SectionSkillset />
-      <SectionProjects/> 
+      {/* <SectionProjects/>  */}
     </main>
   );
 };
