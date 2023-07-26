@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import MainSharedLayout from './sharedLayouts/mainSharedLayout'
 
+
 Contact
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainSharedLayout />}>
-            <Route index element={<Projects />}/>
+            <Route index element={<Home />}/>
             <Route path='about' element={<About />}/>
             <Route path='projects' element={<Projects />}>
               

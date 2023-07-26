@@ -30,11 +30,10 @@ export const MyProjects = ({ main, num }) => {
                     <div className="more-project-img">
                       {images.slice(1).map((img, index) => {
                         return (
-                          <div className="project-img-container">
+                          <div className="project-img-container" key={index}>
                             <img
                               src={img}
                               alt="Project"
-                              key={index}
                               className={"project-img"}
                             />
                           </div>

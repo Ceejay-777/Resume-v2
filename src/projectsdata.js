@@ -19,7 +19,6 @@ export const projects = [
         id: 2,
         name: "second",
         images: [horizon1, horizon2, horizon3, horizon4],
-        // images: [card1],
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
     },
     {
@@ -29,7 +28,7 @@ export const projects = [
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
     },
     {
-        id: 3,
+        id: 4,
         name: "third",
         images: [card1, card2, card3],
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
