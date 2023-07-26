@@ -27,7 +27,7 @@ export const MyProjects = ({ main, num }) => {
                   </div>
 
                   {main && (
-                    <div className="more-project-img">
+                    <div className="more-project-imgs">
                       {images.slice(1).map((img, index) => {
                         return (
                           <div className="project-img-container" key={index}>
