@@ -1,12 +1,12 @@
 import React from 'react'
 import { skillset } from '../data'
 
-const Skillbar = () => {
+const Skillbar = ({skills}) => {
   return (
     <div className="skillbar">
-        {skillset.map((skill) => {
+        {skills.map((skill) => {
             return (
-                <p className="tag">{skill.skill}</p>
+                <p className="tag">{skill}</p>
             )
         })}
     </div>

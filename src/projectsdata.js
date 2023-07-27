@@ -14,23 +14,27 @@ export const projects = [
         name: "first",
         images: [card1, card2, card3],
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        skills: ["HTML", "CSS", "JavaScript", "JQuery", "Git"]
     },
     {
         id: 2,
         name: "second",
         images: [horizon1, horizon2, horizon3, horizon4],
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        skills: ["HTML", "CSS", "JavaScript", "Git"],
     },
     {
         id: 3,
         name: "third",
         images: [card1, card2, card3],
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        skills: ["HTML", "CSS", "JavaScript", "JQuery"],
     },
     {
         id: 4,
         name: "third",
         images: [card1, card2, card3],
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        skills: ["HTML", "CSS", "JavaScript", "JQuery"],
     },
 ];

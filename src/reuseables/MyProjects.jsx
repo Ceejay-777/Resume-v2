@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../projectsdata";
+import Skillbar from "./Skillbar";
 
 export const MyProjects = ({ main, num }) => {
   return (
@@ -8,7 +9,7 @@ export const MyProjects = ({ main, num }) => {
 
       <div className="projects">
         {projects.map((project, index) => {
-          const { name, id, images, info } = project;
+          const { name, id, images, info, skills } = project;
           if (index < num) {
             return (
               <div className="project" key={id}>
@@ -44,6 +45,7 @@ export const MyProjects = ({ main, num }) => {
                 </div>
 
                 <p className="project-info">{info}</p>
+                <Skillbar skills={skills} />
               </div>
             );
           }
