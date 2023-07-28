@@ -9,6 +9,7 @@ const Projects = () => {
       <MyProjects main={true} num={projects.length}/>
     </div>
   )
+  
 }
 
 export default Projects
