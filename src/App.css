@@ -334,6 +334,13 @@ a:-webkit-any-link {
   margin-top: 20px;
 }
 
+.aboutMe-info {
+  margin: 0 10px;
+  line-height: 1.25rem;
+  word-spacing: 3px;
+  font-size: 1.05rem;
+}
+
 .footer-container {
   width: 100%;
   border: 1px solid #000000;
