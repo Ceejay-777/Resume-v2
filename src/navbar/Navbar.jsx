@@ -9,7 +9,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      {/* <img src={Cee} alt="Ceejay Logo" className="ceejay-logo" /> */}
       <Cee />
 
       <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />

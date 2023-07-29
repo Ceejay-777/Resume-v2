@@ -1,5 +1,7 @@
 import React from 'react'
 import { navLinks } from '../data'
+import { Link } from 'react-router-dom'
+
 
 
 const MainNav = () => {
@@ -8,8 +10,8 @@ const MainNav = () => {
         <ul className='navlinks'>
             {navLinks.map((navLink, ID) => {
                 return (
-                    <li key={ID} className='navlink'>
-                        {navLink}
+                    <li className='navlink'>
+                        <Link  key={ID} to={navLink.toLowerCase()}>{navLink}</Link>
                     </li>
                 )
             })}
