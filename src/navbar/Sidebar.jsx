@@ -14,4 +14,4 @@ const Sidebar = ({setSidebarOpen, sidebarOpen}) => {
   )
 }
 
-export default Sidebar
+export default Sidebarz
