@@ -11,23 +11,23 @@ import horizon4 from "./assets/Project_images/horizon/horizon4.JPG"
 export const projects = [
     {
         id: 1,
-        name: "first",
+        name: "Interactive card details form",
         images: [card1, card2, card3],
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        info: "An interactive card details form page built with HTML, CSS and Javascript. It uses JQuery for DOM traversing and JQueryFormValidation to validate the form. In this project, I learnt a lot about using the JQuery library.",
         skills: ["HTML", "CSS", "JavaScript", "JQuery", "Git"]
     },
     {
         id: 2,
-        name: "second",
+        name: "Horizon landing page",
         images: [horizon1, horizon2, horizon3, horizon4],
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        info: "Horizon is a fictional mobile device company. The horizon landing page showcases their latest product (The Horizine Note 3.0) and all it's cool specs. I learnt a lot about CSS flexbox and CSS grid while building this project.",
         skills: ["HTML", "CSS", "JavaScript", "Git"],
     },
     {
         id: 3,
         name: "third",
         images: [card1, card2, card3],
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita it quasi, placeat sint.",
         skills: ["HTML", "CSS", "JavaScript", "JQuery"],
     },
     {
