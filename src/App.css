@@ -325,6 +325,7 @@ a:-webkit-any-link {
   margin: 0px auto;
   display: flex;
   justify-content: center;
+  color: inherit;
 }
 
 .skillbar {

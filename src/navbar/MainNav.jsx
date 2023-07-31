@@ -10,8 +10,9 @@ const MainNav = () => {
         <ul className='navlinks'>
             {navLinks.map((navLink, ID) => {
                 return (
-                    <li className='navlink'>
-                        <Link  key={ID} to={navLink.toLowerCase()}>{navLink}</Link>
+                    <li className='navlink' key={ID} >
+                        {navLink.toLowerCase() === "home" ? <Link to="/">{navLink}</Link> : <Link to={navLink.toLowerCase()}>{navLink}</Link>}
+                        
                     </li>
                 )
             })}
