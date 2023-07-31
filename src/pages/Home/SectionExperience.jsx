@@ -19,7 +19,13 @@ export const SectionExperience = () => {
       <div className="exp-opt-bar">
         {experiences.map((experience, index) => {
           return (
-            <button key={index} className={`tag ${experience.nameTag === currentExp && 'active-exp'}`} onClick={handleExp}>
+            <button
+              key={index}
+              className={`tag ${
+                experience.nameTag === currentExp && "active-exp"
+              }`}
+              onClick={handleExp}
+            >
               {experience.nameTag}
             </button>
           );
@@ -32,11 +38,14 @@ export const SectionExperience = () => {
         <p className="exp-date">{current.date}</p>
         <ul>
           {current.duties.map((duty, index) => {
-            return <li key={index} className="exp-duty">{duty}</li>;
+            return (
+              <li key={index} className="exp-duty">
+                {duty}
+              </li>
+            );
           })}
         </ul>
       </div>
-
     </section>
   );
 };

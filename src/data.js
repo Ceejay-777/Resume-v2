@@ -1,14 +1,17 @@
 import facebook from "./assets/Icons/facebook.svg";
+import whatsapp from "./assets/Icons/whatsapp.svg";
+import email from "./assets/Icons/email.svg";
+import twitter from "./assets/Icons/twitter.svg";
 
 
 export const navLinks = ["Home", "About", "Projects", "Contact"];
 
 export const socialLinks = [
-  { account: "Email", icon: facebook },
+  { account: "Email", icon: email },
   { account: "LinkedIn", icon: facebook },
   { account: "Github", icon: facebook },
-  { account: "Whatsapp", icon: facebook },
-  { account: "Twitter", icon: facebook },
+  { account: "WhatsApp", icon: whatsapp },
+  { account: "Twitter", icon: twitter },
 ];
 
 export const experiences = [

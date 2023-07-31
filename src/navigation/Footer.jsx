@@ -1,10 +1,10 @@
 import React from 'react'
-import Socials from '../reuseables/Socials.jsx'
+// import Socials from '../reuseables/Socials.jsx'
 
 const Footer = () => {
   return (
     <footer className='footer-container'>
-        <Socials />
+        <h1>Loading...</h1>
     </footer>
   )
 }
