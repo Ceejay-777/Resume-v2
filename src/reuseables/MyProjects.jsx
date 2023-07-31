@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../projectsdata";
 import Skillbar from "./Skillbar";
-import "../styles/MyProjects.css"
 
 export const MyProjects = ({ main, num }) => {
   return (

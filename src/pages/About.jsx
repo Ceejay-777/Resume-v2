@@ -11,14 +11,15 @@ const About = () => {
     <div className="main">
       <MyImage />
       <h1 className="sectionTitle">About Me</h1>
+      
       <div className="aboutMe-info">
         <h4>Frontend Web Developer | React Developer | Python Enthusiast</h4>
         <br />
 
         <p>
-          Hi there! I'm a Frontend Web Developer with over a year of
-          experience in building awesome web applications. I've always been
-          fascinated by technology and love creating impactful solutions.
+          Hi there! I'm a Frontend Web Developer with over a year of experience
+          in building awesome web applications. I've always been fascinated by
+          technology and love creating impactful solutions.
         </p>
         <br />
         <p>
@@ -35,13 +36,13 @@ const About = () => {
           Besides frontend work, I've also dabbled in Python-driven Machine
           Learning and Artificial Intelligence. It's been an exciting journey
           exploring data science and learning how to tackle complex challenges
-          with data-driven insights. 
+          with data-driven insights.
         </p>
         <br />
         <p>
-        Collaboration is something I value a lot.
-          I work well in teams, partnering with designers, backend developers,
-          and project managers to make sure everything fits together smoothly.
+          Collaboration is something I value a lot. I work well in teams,
+          partnering with designers, backend developers, and project managers to
+          make sure everything fits together smoothly.
         </p>
         <br />
         <p>
@@ -58,14 +59,18 @@ const About = () => {
         </p>
         <br />
         <p>
-          Send me an email at {" "}
+          Send me an email at{" "}
           <a href="mailto: covenantcrackslord01@gmail.com" className="accent">
             covenantcrackslord01@gmail.com
           </a>{" "}
-          or reach me through the <Link to="/contact" className="accent">Contact</Link> page.
+          or reach me through the{" "}
+          <Link to="/contact" className="accent">
+            Contact
+          </Link>{" "}
+          page.
         </p>
-        {/* <br /> */}
-      <Skillbar skills={skills} />
+
+        <Skillbar skills={skills} />
       </div>
       <Socials />
     </div>

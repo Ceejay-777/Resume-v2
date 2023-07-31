@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { experiences } from "../../data";
-import "../../styles/Experience.css"
 
 export const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");

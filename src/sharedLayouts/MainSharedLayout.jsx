@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router'
-import Navbar from '../navbar/Navbar'
-import Footer from '../navbar/Footer'
+import Navbar from '../navigation/Navbar'
+import Footer from '../navigation/Footer'
 
 const MainSharedLayout = () => {
   return (

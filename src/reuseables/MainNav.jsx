@@ -1,7 +1,6 @@
 import React from 'react'
 import { navLinks } from '../data'
 import { Link } from 'react-router-dom'
-import "../styles/Navigation.css"
 
 
 const MainNav = () => {
@@ -10,9 +9,8 @@ const MainNav = () => {
         <ul className='navlinks'>
             {navLinks.map((navLink, ID) => {
                 return (
-                    <li className='navlink' key={ID} >
-                        {navLink.toLowerCase() === "home" ? <Link to="/">{navLink}</Link> : <Link to={navLink.toLowerCase()}>{navLink}</Link>}
-                        
+                    <li className='navitem ' key={ID} >
+                        {navLink.toLowerCase() === "home" ? <Link to="/" className='navlink'>{navLink}</Link> : <Link to={navLink.toLowerCase()} className='navlink'>{navLink}</Link>}
                     </li>
                 )
             })}
