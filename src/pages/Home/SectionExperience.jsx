@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { experiences } from "../../data";
+import "../../styles/Experience.css"
 
 export const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");
@@ -37,7 +38,6 @@ export const SectionExperience = () => {
         </ul>
       </div>
 
-      <button className="exp-see-more btn">See More</button>
     </section>
   );
 };

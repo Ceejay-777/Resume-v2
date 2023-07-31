@@ -1,7 +1,7 @@
 import React from 'react'
 import { navLinks } from '../data'
 import { Link } from 'react-router-dom'
-
+import "../styles/Navigation.css"
 
 
 const MainNav = () => {

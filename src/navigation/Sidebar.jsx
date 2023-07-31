@@ -1,6 +1,6 @@
 import React from 'react'
 import { navLinks } from '../data'
-import MainNav from './MainNav'
+import MainNav from '../reuseables/MainNav'
 import Close from '../assets/Icons/Close'
 
 const Sidebar = ({setSidebarOpen, sidebarOpen}) => {

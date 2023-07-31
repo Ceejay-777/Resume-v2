@@ -59,10 +59,10 @@ const About = () => {
         <br />
         <p>
           Send me an email at {" "}
-          <a href="mailto: covenantcrackslord01@gmail.com" style={{color: "#d4af37", }}>
+          <a href="mailto: covenantcrackslord01@gmail.com" className="accent">
             covenantcrackslord01@gmail.com
           </a>{" "}
-          or reach me through the <Link to="/contact" style={{color: "#d4af37"}}>Contact</Link> page.
+          or reach me through the <Link to="/contact" className="accent">Contact</Link> page.
         </p>
         {/* <br /> */}
       <Skillbar skills={skills} />

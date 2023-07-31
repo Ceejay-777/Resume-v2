@@ -1,0 +1,35 @@
+.exp-opt-bar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.active-exp {
+  color: var(--primary);
+  background-color: var(--complementary);
+}
+
+.exp-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.exp-company {
+  font-weight: 600;
+  margin-bottom: 5px;
+  border: 2px solid var(--secondary);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.exp-date {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.exp-duty {
+  list-style: none;
+}
