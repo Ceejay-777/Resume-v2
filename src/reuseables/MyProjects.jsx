@@ -31,7 +31,7 @@ export const MyProjects = ({ main, num }) => {
                 </div>
 
                 {main && (
-                  <div className="more-project-imgs">
+                  <div className={images.length !== 2 ? "more-project-imgs" : "more-project-imgs extra-project-img"}>
                     {images.slice(1).map((img, index) => {
                       return (
                         <div className="project-img-container" key={index}>

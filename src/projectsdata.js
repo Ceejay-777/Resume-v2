@@ -10,8 +10,15 @@ import horizon4 from "./assets/Project_images/horizon/horizon4.JPG"
 import faqAccordion1 from "./assets/Project_images/faq_accordion/shot1.PNG"
 import faqAccordion2 from "./assets/Project_images/faq_accordion/shot2.PNG"
 import faqAccordion3 from "./assets/Project_images/faq_accordion/shot3.PNG"
-import faqAccordion4 from "./assets/Project_images/faq_accordion/mobile_view.PNG"
+import faqAccordion4 from "./assets/Project_images/faq_accordion/shot4.PNG"
 
+import ratingCard1 from "./assets/Project_images/rating_component_card/shot1.PNG"
+import ratingCard2 from "./assets/Project_images/rating_component_card/shot2.PNG"
+import ratingCard3 from "./assets/Project_images/rating_component_card/shot3.PNG"
+import ratingCard4 from "./assets/Project_images/rating_component_card/shot4.PNG"
+
+import flipCard1 from "./assets/Project_images/flip_card/shot1.PNG"
+import flipCard2 from "./assets/Project_images/flip_card/shot2.PNG"
 
 export const projects = [
     {
@@ -37,9 +44,16 @@ export const projects = [
     },
     {
         id: 4,
-        name: "third",
-        images: [cardDetails1, cardDetails2, cardDetails3],
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates expedita voluptas iure omnis rerum facilis, cupiditate error itaque necessitatibus iusto accusantium at recusandae quisquam amet reprehenderit quasi, placeat sint.",
+        name: "Rating card component",
+        images: [flipCard1, flipCard2],
+        info: "A rating component card. A simple project from which I learnt a lot about CSS pseudo-elements and pseudo-classes.",
+        skills: ["HTML", "CSS"],
+    },
+    {
+        id: 5,
+        name: "Flip Card",
+        images: [ratingCard1, ratingCard2, ratingCard3, ratingCard4],
+        info: "A fun to watch ATM card that flips on mouse-hover, built with only HTML and CSS.",
         skills: ["HTML", "CSS", "JavaScript", "JQuery"],
     },
 ];

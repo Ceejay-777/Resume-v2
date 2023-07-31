@@ -39,6 +39,10 @@
     gap: 10px;
 }
 
+.extra-project-img {
+    justify-content: center;
+}
+
 .project-info {
   font-size: 0.85rem;
   word-spacing: 0.2rem;
