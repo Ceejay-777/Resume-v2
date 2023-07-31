@@ -48,13 +48,17 @@ export const skillset = [
     rating: 85,
   },
   {
-    skill: "React",
+    skill: "ReactJS",
     rating: 70,
   },
   {
     skill: "Tailwind CSS",
     rating: 30,
   },
+  {
+    skill: "JQuery",
+    rating: "80"
+  }
 ];
 
 

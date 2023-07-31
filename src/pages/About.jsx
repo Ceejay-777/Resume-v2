@@ -35,10 +35,11 @@ const About = () => {
           Besides frontend work, I've also dabbled in Python-driven Machine
           Learning and Artificial Intelligence. It's been an exciting journey
           exploring data science and learning how to tackle complex challenges
-          with data-driven insights. Collaboration is something I value a lot.
+          with data-driven insights. 
         </p>
         <br />
         <p>
+        Collaboration is something I value a lot.
           I work well in teams, partnering with designers, backend developers,
           and project managers to make sure everything fits together smoothly.
         </p>
@@ -57,16 +58,16 @@ const About = () => {
         </p>
         <br />
         <p>
-          Send me an email at
-          <a href="mailto: covenantcrackslord01@gmail.com">
+          Send me an email at {" "}
+          <a href="mailto: covenantcrackslord01@gmail.com" style={{color: "#d4af37", }}>
             covenantcrackslord01@gmail.com
           </a>{" "}
-          or reach me through the <Link to="/contact">Contact</Link> page.
+          or reach me through the <Link to="/contact" style={{color: "#d4af37"}}>Contact</Link> page.
         </p>
-        <br />
-        <Socials />
-      </div>
+        {/* <br /> */}
       <Skillbar skills={skills} />
+      </div>
+      <Socials />
     </div>
   );
 };

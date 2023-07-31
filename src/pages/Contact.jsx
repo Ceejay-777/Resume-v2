@@ -26,10 +26,11 @@ const Contact = () => {
             placeholder="EMAIL"
           />
           <textarea
-            type="email"
+            type="text"
             value={message}
             onChange={(event) => setMessage(event.target.value)}
-            placeholder="EMAIL"
+            placeholder="Please add a comment"
+            style={{zIndex:"-1"}}
           ></textarea>
           <button type="submit" className="btn">Submit</button>
         </form>
