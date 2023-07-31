@@ -4,9 +4,9 @@ import { skillset } from '../data'
 const Skillbar = ({skills}) => {
   return (
     <div className="skillbar">
-        {skills.map((skill) => {
+        {skills.map((skill, ID) => {
             return (
-                <p className="tag">{skill}</p>
+                <p className="tag" key={ID}>{skill}</p>
             )
         })}
     </div>
