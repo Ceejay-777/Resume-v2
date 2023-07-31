@@ -17,11 +17,11 @@ export const socialLinks = [
 export const experiences = [
   {
     nameTag: "BrainBench",
-    title: "Backend Junior Developer(ML), Intern",
+    title: "Junior Backend Developer(ML), Intern",
     company: "Brainbench Academy",
     location: "Ado-Ekiti, Ekiti State",
     date: "April 2022 - September 2022",
-    duties: ["one", "two", "three", "four"],
+    duties: ["Help develop simple APIs using python.", "Help build simple prediction models", "three", "four"],
   },
 
   {

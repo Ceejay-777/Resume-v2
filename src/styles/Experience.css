@@ -32,4 +32,15 @@
 
 .exp-duty {
   list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+  /* border: 1px solid; */
+}
+
+
+.left-arrow {
+  width: 20px;
+  transform: rotateZ(-90deg);
 }

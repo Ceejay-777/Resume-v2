@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { experiences } from "../../data";
+import arrow from "../../assets/Icons/down.svg";
 
 export const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");
@@ -39,8 +40,11 @@ export const SectionExperience = () => {
         <ul>
           {current.duties.map((duty, index) => {
             return (
-              <li key={index} className="exp-duty">
-                {duty}
+              <li className="exp-duty" key={index}>
+                <img src={arrow} alt=">" className="left-arrow"/>
+                <p className="exp-duty-text">
+                  {duty}
+                </p>
               </li>
             );
           })}
