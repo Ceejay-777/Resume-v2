@@ -1,5 +1,6 @@
 import React from "react";
 import { skillset } from "../../data";
+import "../../styles/Skills.css"
 
 export const SectionSkillset = () => {
   return (
