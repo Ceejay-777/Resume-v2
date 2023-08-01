@@ -1,14 +1,15 @@
-import facebook from "./assets/Icons/facebook.svg";
+import github from "./assets/Icons/github.svg";
 import whatsapp from "./assets/Icons/whatsapp.svg";
-import email from "./assets/Icons/email.svg";
+import gmail from "./assets/Icons/gmail.svg";
 import twitter from "./assets/Icons/twitter.svg";
+import linkedin from "./assets/Icons/linkedin2.svg"
 
 export const navLinks = ["Home", "About", "Projects", "Contact"];
 
 export const socialLinks = [
-  { account: "Email", icon: email },
-  { account: "LinkedIn", icon: facebook },
-  { account: "Github", icon: facebook },
+  { account: "Email", icon: gmail },
+  { account: "LinkedIn", icon: linkedin },
+  { account: "Github", icon: github },
   { account: "WhatsApp", icon: whatsapp },
   { account: "Twitter", icon: twitter },
 ];
@@ -34,7 +35,7 @@ export const experiences = [
     company: "Kinplus Technologies ",
     location: "Ado-Ekiti, Ekiti State",
     date: "April 2023 - Present",
-    duties: ["one", "two", "three", "four", "five", "six"],
+    duties: ["Understand the basics of HTML, CSS and JavaScript.", "Develop and maintain responsive web pages using said technologies.", "Collaborate with designers and back-end developers to implement user interfaces. This involves working closely with designers to understand their vision and then collaborating with the backend team to implement said vision correctly ", "Test and debug code to ensure optimal performance",],
   },
 ];
 
