@@ -40,14 +40,14 @@ const Contact = () => {
 
           <div className="input-container">
             <label htmlFor="message">Tell me something</label>
-            <textarea
+            <input
               type="text"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
               name="message"
-              placeholder="Comment goes here"
-              // style={{zIndex:"1", backgroundColor:"white"}}
-            ></textarea>
+              placeholder="Comment here"
+              className="message-input"
+            />
           </div>
 
           <button type="submit" className="btn">Submit</button>
