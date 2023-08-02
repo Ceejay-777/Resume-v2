@@ -34,5 +34,8 @@ input {
 }
 
 .message-input {
-    
+    resize: none;
+    height: auto;
+    overflow: hidden;
+    min-height: 30px;
 }

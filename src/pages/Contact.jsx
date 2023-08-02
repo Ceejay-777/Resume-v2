@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Skillbar from "../reuseables/Skillbar";
 
 const Contact = () => {
   const [fname, setFname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const messageInput = useRef(null);
 
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log(fname, email, message)
   };
+
+  const adjustHeight = (event) => {
+    event.target.style.height = 'auto'; 
+    event.target.style.height = event.target.scrollHeight + 'px';
+    setMessage(event.target.value)
+  }
   return (
     <div className="main">
     <h1 className="sectionTitle">Contact Me</h1>
@@ -41,12 +48,15 @@ const Contact = () => {
           <div className="input-container">
             <label htmlFor="message">Tell me something</label>
             <input
-              type="text"
+              type="textarea"
               value={message}
-              onChange={(event) => setMessage(event.target.value)}
+              onChange={adjustHeight}
               name="message"
               placeholder="Comment here"
               className="message-input"
+              ref={messageInput}
+              cols={300}
+              rows={10}
             />
           </div>
 
