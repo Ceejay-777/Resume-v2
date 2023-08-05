@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Skillbar from "../reuseables/Skillbar";
+import TextareaAutosize from "react-textarea-autosize";
 
 const Contact = () => {
   const [fname, setFname] = useState("");
@@ -8,18 +9,18 @@ const Contact = () => {
   const messageInput = useRef(null);
 
   const handleSubmit = (event) => {
-    event.preventDefault()
-    console.log(fname, email, message)
+    event.preventDefault();
+    console.log(fname, email, message);
   };
 
   const adjustHeight = (event) => {
-    event.target.style.height = 'auto'; 
-    event.target.style.height = event.target.scrollHeight + 'px';
-    setMessage(event.target.value)
-  }
+    event.target.style.height = "auto";
+    event.target.style.height = event.target.scrollHeight + "px";
+    setMessage(event.target.value);
+  };
   return (
     <div className="main">
-    <h1 className="sectionTitle">Contact Me</h1>
+      <h1 className="sectionTitle">Contact Me</h1>
 
       <div className="contact-form-container">
         <form onSubmit={handleSubmit} className="contact-form">
@@ -47,20 +48,20 @@ const Contact = () => {
 
           <div className="input-container">
             <label htmlFor="message">Tell me something</label>
-            <input
-              type="textarea"
+            <textarea
+              type="text"
               value={message}
-              onChange={adjustHeight}
+              onChange={(event) => setEmail(event.target.value)}
               name="message"
               placeholder="Comment here"
-              className="message-input"
-              ref={messageInput}
-              cols={300}
-              rows={10}
-            />
+              cols={6}
+              rows={3}
+              className="mytextarea"
+            ></textarea>
           </div>
-
-          <button type="submit" className="btn">Submit</button>
+          <button type="submit" className="btn">
+            Submit
+          </button>
         </form>
       </div>
     </div>

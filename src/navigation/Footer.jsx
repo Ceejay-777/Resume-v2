@@ -1,10 +1,9 @@
 import React from 'react'
-// import Socials from '../reuseables/Socials.jsx'
-
+import Cee from '../assets/Cee'
 const Footer = () => {
   return (
     <footer className='footer-container'>
-        <h1>Loading...</h1>
+        <Cee />
     </footer>
   )
 }

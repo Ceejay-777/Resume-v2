@@ -16,8 +16,6 @@ const Sidebar = ({setSidebarOpen, sidebarOpen}) => {
   }
 }
 
-const main = document.querySelector(".main")
-
 useEffect(() => {
     const main = document.querySelector(".main")
     main.addEventListener("click", bodyClickHandler)
