@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <footer className='footer-container'>
         <Cee />
+        
     </footer>
   )
 }
