@@ -42,7 +42,7 @@ const Contact = () => {
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               name="email"
-              placeholder="EM="
+              placeholder="EMAIL"
             />
           </div>
 
