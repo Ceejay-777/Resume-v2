@@ -56,7 +56,7 @@
   display: block;
 }
 
-.navlink > a {
+.navlink>a {
   color: inherit;
 }
 
@@ -69,6 +69,18 @@
 }
 
 .footer-container {
-    width: 100%;
-    background-color: var(--primary);
-  }
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+.footer-container>svg {
+  width: 40px;
+}
+
+.footer-text {
+  color: var(--complementary);
+}

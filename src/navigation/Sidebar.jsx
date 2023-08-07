@@ -5,18 +5,17 @@ import Close from '../assets/Icons/Close'
 import { useLocation } from 'react-router'
 
 
-const Sidebar = ({setSidebarOpen, sidebarOpen}) => {
+const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
 
   const currentLocation = useLocation();
 
- const  bodyClickHandler = (e) => {
-  if(sidebarOpen) {
-    console.log(e.target)
-    setSidebarOpen(false)
+  const bodyClickHandler = (e) => {
+    if (sidebarOpen) {
+      setSidebarOpen(false)
+    }
   }
-}
 
-useEffect(() => {
+  useEffect(() => {
     const main = document.querySelector(".main")
     main.addEventListener("click", bodyClickHandler)
     return () => {
@@ -25,10 +24,10 @@ useEffect(() => {
   }, [sidebarOpen, currentLocation.pathname])
 
   return (
-     <div  className={sidebarOpen ?"sidebar-container sidebarOpen" : "sidebar-container"}>
+    <div className={sidebarOpen ? "sidebar-container sidebarOpen" : "sidebar-container"}>
 
-      <Close sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/> 
-      
+      <Close sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
       <MainNav />
     </div>
   )
