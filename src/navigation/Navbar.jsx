@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Cee from "../assets/Cee.jsx";
 import MainNav from "../reuseables/MainNav.jsx";
 import Sidebar from "./Sidebar";
-import Hamburger from "../assets/Icons/hamburger";
+import Hamburger from "../assets/Icons/hamburger"
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -10,6 +10,8 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <Cee />
+
+      <MainNav main={true} />
 
       <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 

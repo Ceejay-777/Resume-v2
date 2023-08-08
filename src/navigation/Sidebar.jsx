@@ -28,7 +28,7 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
 
       <Close sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
-      <MainNav />
+      <MainNav main={false} />
     </div>
   )
 }
