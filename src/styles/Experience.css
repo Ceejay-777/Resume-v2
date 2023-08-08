@@ -52,6 +52,6 @@
 
 @media screen and (width > 768) {
   .exp-info {
-    mar
+    margin: 80px;
   }
 }
