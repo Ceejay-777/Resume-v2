@@ -10,6 +10,10 @@
   background-color: var(--complementary);
 }
 
+.exp-info {
+  max-width: 768px;
+}
+
 .exp-title {
   font-size: 1.25rem;
   font-weight: 400;
@@ -44,4 +48,10 @@
   width: 20px;
   transform: rotateZ(-90deg);
   z-index: -1;
+}
+
+@media screen and (width > 768) {
+  .exp-info {
+    mar
+  }
 }

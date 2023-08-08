@@ -7,9 +7,11 @@ import SectionProjects from "./SectionProjects";
 const Home = () => {
   return (
     <main className="main">
-      <SectionIntro />
-      <SectionSkillset />
-      <SectionProjects/> 
+      <div className="col-2">
+        <SectionIntro />
+        <SectionSkillset />
+      </div>
+      <SectionProjects />
       <SectionExperience />
     </main>
   );

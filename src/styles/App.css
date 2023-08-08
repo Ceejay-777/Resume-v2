@@ -38,9 +38,9 @@ a {
 
 .main {
   flex: 1;
-  margin: 20px;
+  margin: 20px auto;
   margin-top: 80px;
-  /* max-width: */
+  max-width: 1024px;
 }
 
 .ceejay-logo {
@@ -197,6 +197,9 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* main */
+@media screen and (width > 768px) {
+  .col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
