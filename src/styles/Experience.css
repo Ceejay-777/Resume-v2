@@ -50,8 +50,8 @@
   z-index: -1;
 }
 
-@media screen and (width > 768) {
+@media screen and (width > 768px) {
   .exp-info {
-    margin: 80px;
+    margin: 0px 80px;
   }
 }
