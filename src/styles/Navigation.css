@@ -93,10 +93,18 @@
 .footer-container {
   width: 100%;
   background-color: var(--primary);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 450px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
+
 }
 
 .footer-container>svg {

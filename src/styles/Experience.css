@@ -12,6 +12,7 @@
 
 .exp-info {
   max-width: 768px;
+  margin: 0px 5%;
 }
 
 .exp-title {
@@ -50,7 +51,7 @@
   z-index: -1;
 }
 
-@media screen and (width > 768px) {
+@media screen and (width > 600px) {
   .exp-info {
     margin: 0px 80px;
   }
