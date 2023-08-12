@@ -40,7 +40,6 @@
   height: 100%;
   transition: transform 0.5s ease-in-out;
   padding: 30px;
-  z-index: 9999;
 }
 
 .navlinks-main {
@@ -107,7 +106,7 @@
 
 }
 
-.footer-container>svg {
+.footer-content>svg {
   width: 40px;
 }
 
