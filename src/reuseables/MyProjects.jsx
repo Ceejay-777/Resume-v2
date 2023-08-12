@@ -7,8 +7,9 @@ import Skillbar from "./Skillbar";
 export const MyProjects = ({ main, num }) => {
   const [showAll, setShowAll] = useState(false);
   const show = <span className="accent" onClick={() => setShowAll(!showAll)}>
-  {showAll ? "show less" : "show more"}...
-</span>
+    {showAll ? "show less" : "show more"}...
+  </span>
+
   return (
     <div className="projects">
       {projects.map((project, index) => {
@@ -47,11 +48,11 @@ export const MyProjects = ({ main, num }) => {
                 )}
               </div>
 
-                {info.length >= 150 ? showAll ? (
-                  <p className="project-info">{info}  {show}</p>
-                ) : (
-                  <p className="project-info">{info.substring(0, 150)} {show}</p>
-                ): <p className="project-info">{info}</p>}
+              {info.length >= 150 ? showAll ? (
+                <p className="project-info">{info}  {show}</p>
+              ) : (
+                <p className="project-info">{info.substring(0, 150)} {show}</p>
+              ) : <p className="project-info">{info}</p>}
               <Skillbar skills={skills} />
             </div>
           );

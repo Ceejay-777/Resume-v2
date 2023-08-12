@@ -41,6 +41,7 @@ a {
   margin: 20px auto;
   margin-top: 80px;
   max-width: 1024px;
+  width: 100%;
 }
 
 .ceejay-logo {
@@ -197,10 +198,20 @@ a {
   }
 }
 
+
 @media screen and (width > 768px) {
   .col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
+  .aboutMe-info {
+    margin: 0px 80px;
+  }
+}
+
+@media screen and (width > 600px) {
+  .aboutMe-info {
+    margin: 0px 40px;
+  }
 }
