@@ -48,7 +48,7 @@
 .left-arrow {
   width: 20px;
   transform: rotateZ(-90deg);
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 @media screen and (width > 600px) {
