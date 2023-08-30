@@ -55,7 +55,7 @@ const Contact = () => {
               name="message"
               placeholder="Comment here"
               cols={6}
-              rows={3}
+              rows={6}
               className="mytextarea"
             ></textarea>
           </div>

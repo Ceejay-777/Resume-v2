@@ -3,6 +3,7 @@
     /* border: 1px solid; */
     border-radius: 10px;
     /* background-color: var(--primary); */
+    margin: 0px 40px;
 
 }
 
@@ -22,15 +23,18 @@
     margin-bottom: 20px;
 }
 
-.input-container > label{
+.input-container>label {
     font-size: 0.75rem;
 }
 
 input {
-    height: 30px;   
+    height: 30px;
     padding-left: 10px;
     border-radius: 10px;
     border-width: 1px;
 }
 
-
+.mytextarea {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
