@@ -7,8 +7,8 @@ const Projects = () => {
     <div className='main'>
       <h1 className='sectionTitle'>My Projects</h1>
       <MyProjects main={true} num={projects.length}/>
-      <p>
-        Checkout all my frontendmentor projects 
+      <p className='checkout'>
+        Checkout all my frontendmentor projects at <a href="https://www.frontendmentor.io/profile/Ceejay-777" className='accent' target='_blank'>Frontend Mentor</a>
       </p>
     </div>
   )
