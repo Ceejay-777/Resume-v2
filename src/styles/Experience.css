@@ -45,9 +45,8 @@
   font-weight: 500;
 }
 
-.left-arrow {
+.right-arrow {
   width: 20px;
-  transform: rotateZ(-90deg);
   /* z-index: -1; */
 }
 

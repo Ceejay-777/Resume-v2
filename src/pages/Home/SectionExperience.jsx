@@ -41,7 +41,7 @@ export const SectionExperience = () => {
           {current.duties.map((duty, index) => {
             return (
               <li className="exp-duty" key={index}>
-                <img src={arrow} alt=">" className="left-arrow"/>
+                <img src={arrow} alt=">" className="right-arrow"/>
                 <p className="exp-duty-text">
                   {duty}
                 </p>
