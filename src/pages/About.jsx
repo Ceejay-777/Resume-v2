@@ -2,7 +2,6 @@ import React from "react";
 import { skillset } from "../data";
 import MyImage from "../reuseables/MyImage";
 import Skillbar from "../reuseables/Skillbar";
-import Socials from "../reuseables/Socials";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -28,8 +27,7 @@ const About = () => {
         </p>
         <br />
         <p>
-          Building visually appealing and user-friendly interfaces is my jam,
-          and I enjoy the process of making websites come to life.
+          Building visually appealing and user-friendly interfaces is my jam, I just enjoy the process of making websites come to life.
         </p>
         <br />
         <p>
@@ -72,7 +70,6 @@ const About = () => {
 
         <Skillbar skills={skills} />
       </div>
-      <Socials />
     </div>
   );
 };

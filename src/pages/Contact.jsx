@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Skillbar from "../reuseables/Skillbar";
 import TextareaAutosize from "react-textarea-autosize";
+import Socials from "../reuseables/socials";
 
 const Contact = () => {
   const [fname, setFname] = useState("");
@@ -63,6 +64,9 @@ const Contact = () => {
             Submit
           </button>
         </form>
+      </div>
+      <div className="contact-social-container">
+        <Socials />
       </div>
     </div>
   );

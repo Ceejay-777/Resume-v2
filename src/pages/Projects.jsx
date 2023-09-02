@@ -7,6 +7,9 @@ const Projects = () => {
     <div className='main'>
       <h1 className='sectionTitle'>My Projects</h1>
       <MyProjects main={true} num={projects.length}/>
+      <p>
+        Checkout all my frontendmentor projects 
+      </p>
     </div>
   )
   
