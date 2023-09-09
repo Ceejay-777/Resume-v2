@@ -16,7 +16,7 @@ import MainSharedLayout from "./sharedLayouts/mainSharedLayout";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/Resume">
         <Routes>
           <Route path="/" element={<MainSharedLayout />}>
             <Route index element={<Home />} />
