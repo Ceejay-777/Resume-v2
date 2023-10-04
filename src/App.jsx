@@ -5,7 +5,7 @@ import "./styles/Navigation.css";
 import "./styles/Experience.css";
 import "./styles/MyProjects.css";
 import "./styles/Skills.css";
-import "./styles/contact.css";
+import "./styles/Contact.css";
 
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About";
