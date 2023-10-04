@@ -35,13 +35,13 @@ export const projects = [
     info: "An interactive card details form page built with HTML, CSS and Javascript. It uses JQuery for DOM traversing and JQueryFormValidation to validate the form. In this project, I learnt a lot about using the JQuery library.",
     skills: ["HTML", "CSS", "JavaScript", "JQuery", "Git"],
   },
-  {
-    id: 3,
-    name: "FAQ accordion component",
-    images: [faqAccordion1, faqAccordion2, faqAccordion3, faqAccordion4],
-    info: "An accordion component built with HTML, CSS, Javacript and JQuery. In this project, I was able to practice a lot with the Javascript language and JQuery and I learnt a lot about the Document Object Model (DOM) and it's manipulation.",
-    skills: ["HTML", "CSS", "JavaScript", "JQuery"],
-  },
+  //   {
+  //     id: 3,
+  //     name: "FAQ accordion component",
+  //     images: [faqAccordion1, faqAccordion2, faqAccordion3, faqAccordion4],
+  //     info: "An accordion component built with HTML, CSS, Javacript and JQuery. In this project, I was able to practice a lot with the Javascript language and JQuery and I learnt a lot about the Document Object Model (DOM) and it's manipulation.",
+  //     skills: ["HTML", "CSS", "JavaScript", "JQuery"],
+  //   },
   {
     id: 4,
     name: "Rating card component",
