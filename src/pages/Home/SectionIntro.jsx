@@ -1,5 +1,5 @@
 import MyImage from "../../reuseables/MyImage.jsx";
-import Socials from "../../reuseables/socials.jsx";
+import Socials from "../../reuseables/Socials.jsx";
 
 const SectionIntro = () => {
   return (
