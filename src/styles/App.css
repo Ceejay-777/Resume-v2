@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2c3e50;
+  --primary: rgb(44, 62, 80);
   --secondary: #d4af37;
   --accent: #d7b9c4;
   --complementary: #a9a9a9;
@@ -13,17 +13,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* body {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-} */
-
-a {
-  text-decoration: none;
-  margin: 0px auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -31,7 +21,6 @@ a {
   margin: 0px auto;
   margin-top: 80px;
   margin-bottom: 0px;
-  max-width: 1024px;
   width: 100%;
   background-color: white;
 }
@@ -39,81 +28,6 @@ a {
 .ceejay-logo {
   width: 80px;
   background-color: transparent;
-}
-
-/* .sectionTitle {
-  text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-} */
-
-.my-img-container {
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  aspect-ratio: 9/16;
-  max-width: 350px;
-  margin: 20px auto;
-  border-radius: 40px;
-  background-image: url("../assets/CeejayImage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.my-img {
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.my-intro {
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.my-intro>p {
-  font-weight: 600;
-}
-
-.my-intro>h1 {
-  font-size: 2rem;
-}
-
-.my-intro>h4 {
-  margin-bottom: 20px;
-  text-transform: none;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  min-width: 240px;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 15px 30px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  animation: wave 2.5s linear infinite;
-  background-color: white;
-}
-
-.social-link-icon {
-  width: 20px;
-  padding: 4px;
-  box-sizing: content-box;
-  border-radius: 25%;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-}
-
-.social-link-name {
-  font-size: 0.5rem;
-  font-weight: bold;
-  color: black;
 }
 
 .tag {
@@ -185,11 +99,6 @@ a {
 
 
 @media screen and (width > 768px) {
-  .col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .aboutMe-info {
     margin: 0px 80px;
   }

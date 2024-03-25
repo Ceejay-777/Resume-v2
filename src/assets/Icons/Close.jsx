@@ -8,7 +8,7 @@ const Close = ({ sidebarOpen, setSidebarOpen }) => {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className="w-6 h-6 border-2 border-sec rounded-full p-2 box-content text-sec transition-all hover:scale-110 nav-close"
+      className="w-6 h-6 border-2 mb-10 border-sec rounded-full p-2 box-content text-sec transition-all hover:scale-110 nav-close"
       onClick={() => {
         setSidebarOpen(false);
       }}

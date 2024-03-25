@@ -1,29 +1,36 @@
 import github from "./assets/Icons/github.svg";
-import whatsapp from "./assets/Icons/whatsapp.svg";
-import gmail from "./assets/Icons/gmail.svg";
-import twitter from "./assets/Icons/twitter.svg";
-import linkedin from "./assets/Icons/linkedin2.svg";
-
-export const navLinks = ["Home", "About", "Projects", "Contact"];
+import gmail from "./assets/Icons/mail.svg";
+import Xlogo from "./assets/Icons/Xlogo.svg";
+import linkedin from "./assets/Icons/linkedin.svg";
+import phone from "./assets/Icons/phone.svg";
+import javascript from "./assets/Icons/javascript.svg";
+import html from "./assets/Icons/html.svg";
+import css from "./assets/Icons/css.svg";
+import react from "./assets/Icons/react.svg";
+import nodejs from "./assets/Icons/nodejs.svg";
+import nextjs from "./assets/Icons/nextjs.svg";
+import figma from "./assets/Icons/figma.svg";
+import flask from "./assets/Icons/flask.svg";
+import git from "./assets/Icons/git.svg";
+import python from "./assets/Icons/python.svg";
+import bootstrap from "./assets/Icons/bootstrap.svg";
+import tailwindCSS from "./assets/Icons/tailwindCSS.svg";
 
 export const socialLinks = [
   {
-    account: "Email",
     icon: gmail,
-    ref: "mailto: covenantcrackslord01@gmail.com",
+    ref: "mailto: covenantjoshade.com",
   },
   {
-    account: "LinkedIn",
     icon: linkedin,
     ref: "https://www.linkedin.com/in/covenant-joshua-5080aa228",
   },
-  { account: "Github", icon: github, ref: "https://github.com/Ceejay-777" },
+  { icon: github, ref: "https://github.com/Ceejay-777" },
   {
-    account: "WhatsApp",
-    icon: whatsapp,
+    icon: phone,
     ref: "https://wa.me/2349069189724",
   },
-  { account: "Twitter", icon: twitter, ref: "https://twitter.com/Cee_Jay_777" },
+  { icon: Xlogo, ref: "https://twitter.com/Cee_Jay_777" },
 ];
 
 export const experiences = [
@@ -86,3 +93,18 @@ export const skillset = [
     rating: 80,
   },
 ];
+
+export const skills = [
+  {icon: javascript, name:"Javascript"}, 
+  {icon: react, name:"React"}, 
+  {icon: html, name:"HTML"}, 
+  {icon: css, name:"CSS"}, 
+  {icon: nextjs, name:"NextJS"}, 
+  {icon: nodejs, name:"NodeJS"}, 
+  {icon: tailwindCSS, name:"Tailwindcss"}, 
+  {icon: bootstrap, name:"Bootstrap"}, 
+  {icon: python, name:"Python"}, 
+  {icon: figma, name:"Figma"}, 
+  {icon: flask, name:"Flask"}, 
+  {icon: git, name:"Git"}, 
+]

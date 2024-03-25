@@ -1,25 +1,21 @@
 import React from "react";
 import { socialLinks } from "../data";
-import { Link } from "react-router-dom";
-
 
 const Socials = () => {
   return (
-    <div className="social-links">
+    <div className="flex gap-4 mt-8 max-w-[480px] w-fit items-center">
       {socialLinks.map((socialLink, index) => {
         return (
           <div
-            className="social-link"
             key={index}
-            style={{ animationDelay: `${0.5 * index}s` }}
+            className="p-2 dark:bg-white rounded-full hover:scale-110"
           >
             <a href={socialLink.ref} target="_blank">
               <img
                 src={socialLink.icon}
                 alt={`${socialLink.account} icon`}
-                className="social-link-icon"
+                className="w-6 mb:w-8"
               />
-              <p className="social-link-name">{socialLink.account}</p>
             </a>
           </div>
         );

@@ -1,15 +1,3 @@
-.section-skillset {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.aSkill-container {
-  width: 95%;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
 .skillTexts {
   display: flex;
   justify-content: space-between;

@@ -1,24 +1,17 @@
 import React from "react";
-import { skillset } from "../../data";
+import { skills } from "../../data";
+import Header from "../../reuseables/Header";
 
 export const SectionSkillset = () => {
   return (
-    <section className="section section-skillset">
-      <h2 className="sectionTitle">Skill Set</h2>
+    <section className="max-w-[1024px] p-8 bg-gray-50 dark:bg-priFade transition-all duration-500">
+      <Header>Skills</Header>
 
-      {skillset.map((aSkill, index) => {
-        const { skill, rating } = aSkill;
+      {skills.map((skill, index) => {
+        const {icon, name} = skill
         return (
-          <div className="aSkill-container"
-          key={index}>
-            <div className="skillTexts">
-              <p className="skillText">{skill}</p>
-              <p className="skillPercent skillText">{`${rating}%`}</p>
-            </div>
-
-            <div className="skill-container">
-              <div className="skill" style={{ width: `${rating}%` }}></div>
-            </div>
+          <div className="w-16 h-16" key={index}>
+            <img src={icon} alt={name} className="w-full h-full" />
           </div>
         );
       })}

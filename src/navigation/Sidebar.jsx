@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import { navLinks } from "../data";
-import MainNav from "../reuseables/MainNav";
 import Close from "../assets/Icons/Close";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import Theme from "../reuseables/Theme";
+import Download from "../reuseables/Download";
 
 const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
   const currentLocation = useLocation();
@@ -18,7 +17,6 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
   useEffect(() => {
     const main = document.querySelector(".main");
     main.addEventListener("click", bodyClickHandler);
-    // console.log(main)
     return () => {
       main.removeEventListener("click", bodyClickHandler);
     };
@@ -26,13 +24,13 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
 
   return (
     <div
-      className={
-        `left-[0] bg-white dark:bg-pri w-52 h-screen transition-all duration-500 p-8 fixed top-[0] ${sidebarOpen && "translate-x-[0]"} translate-x-[-100%]`
-      }
+      className={`left-[0] bg-white dark:bg-pri w-52 h-screen transition-all duration-500 p-8 fixed top-[0] ${
+        sidebarOpen && "translate-x-[0]"
+      } translate-x-[-100%]`}
     >
       <Close sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <nav>
-        <ul className="navlinks gap-4">
+        <ul>
           <li className="list-none mb-5 text-center">
             <Link
               to="/"
@@ -63,20 +61,10 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
       </nav>
 
       <Theme />
-      <div className="bg-pri text-lg rounded-lg border-2">Download CV</div>
+      <br />
+      <Download />
     </div>
   );
 };
-
-// .navlink {
-//   font-size: 1.25rem;
-//   font-weight: 500;
-//   border: 2px solid var(--secondary);
-//   padding: 0.25rem;
-//   border-radius: 20px;
-//   color: var(--complementary);
-//   transition: all 0.2s ease-in-out;
-//   display: block;
-// }
 
 export default Sidebar;
