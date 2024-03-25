@@ -12,13 +12,13 @@ import faqAccordion2 from "./assets/Project_images/faq_accordion/shot2.jpg";
 import faqAccordion3 from "./assets/Project_images/faq_accordion/shot3.jpg";
 import faqAccordion4 from "./assets/Project_images/faq_accordion/shot4.jpg";
 
-import ratingCard1 from "./assets/Project_images/rating_component_card/shot1.PNG";
-import ratingCard2 from "./assets/Project_images/rating_component_card/shot2.PNG";
-import ratingCard3 from "./assets/Project_images/rating_component_card/shot3.PNG";
-import ratingCard4 from "./assets/Project_images/rating_component_card/shot4.PNG";
+import ratingCard1 from "./assets/Project_images/rating_component_card/shot1.jpg";
+import ratingCard2 from "./assets/Project_images/rating_component_card/shot2.jpg";
+import ratingCard3 from "./assets/Project_images/rating_component_card/shot3.jpg";
+import ratingCard4 from "./assets/Project_images/rating_component_card/shot4.jpg";
 
-import flipCard1 from "./assets/Project_images/flip_card/shot1.PNG";
-import flipCard2 from "./assets/Project_images/flip_card/shot2.PNG";
+import flipCard1 from "./assets/Project_images/flip_card/shot1.jpg";
+import flipCard2 from "./assets/Project_images/flip_card/shot2.jpg";
 
 export const projects = [
   {
