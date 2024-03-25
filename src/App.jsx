@@ -12,10 +12,26 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import MainSharedLayout from "./sharedLayouts/MainSharedLayout";
+import { createContext, useContext, useEffect, useState } from "react";
+
+const themeContext = createContext()
 
 function App() {
+  const [theme, setTheme] = useState("light")
+
+  useEffect(() => {
+    const bodyClasses = document.body.classList;
+
+    if (bodyClasses.contains("dark")) {
+      bodyClasses.remove("dark");
+    } else if (bodyClasses.contains("light")) {
+      bodyClasses.remove("light");
+    }
+    bodyClasses.add(theme);
+  }, [theme])
+
   return (
-    <>
+    <themeContext.Provider value={{ theme, setTheme }}>
       <Router>
         <Routes>
           <Route path="/" element={<MainSharedLayout />}>
@@ -26,8 +42,9 @@ function App() {
           </Route>
         </Routes>
       </Router>
-    </>
+    </themeContext.Provider>
   );
 }
 
 export default App;
+export const usethemeContext = () => useContext(themeContext)

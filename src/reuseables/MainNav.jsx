@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const MainNav = ({ main }) => {
   return (
-    <nav className={main ? "main-nav-main" : "main-nav"}>
+    <nav className={"hidden dark:bg-pri md:block"}>
       <ul className={main ? "navlinks-main navlinks" : "navlinks"}>
         {navLinks.map((navLink, ID) => {
           return (
