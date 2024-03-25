@@ -7,10 +7,10 @@ import horizon2 from "./assets/Project_images/horizon/horizon2.JPG";
 import horizon3 from "./assets/Project_images/horizon/horizon3.JPG";
 import horizon4 from "./assets/Project_images/horizon/horizon4.JPG";
 
-import faqAccordion1 from "./assets/Project_images/faq_accordion/shot1.PNG";
-import faqAccordion2 from "./assets/Project_images/faq_accordion/shot2.PNG";
-import faqAccordion3 from "./assets/Project_images/faq_accordion/shot3.PNG";
-import faqAccordion4 from "./assets/Project_images/faq_accordion/shot4.PNG";
+import faqAccordion1 from "./assets/Project_images/faq_accordion/shot1.jpg";
+import faqAccordion2 from "./assets/Project_images/faq_accordion/shot2.jpg";
+import faqAccordion3 from "./assets/Project_images/faq_accordion/shot3.jpg";
+import faqAccordion4 from "./assets/Project_images/faq_accordion/shot4.jpg";
 
 import ratingCard1 from "./assets/Project_images/rating_component_card/shot1.PNG";
 import ratingCard2 from "./assets/Project_images/rating_component_card/shot2.PNG";
