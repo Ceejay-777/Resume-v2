@@ -35,6 +35,20 @@ export const socialLinks = [
 
 export const experiences = [
   {
+    nameTag: "Kinplus",
+    title: "Frontend Web developer, Intern",
+    company: "Kinplus Technologies ",
+    location: "Ado-Ekiti, Ekiti State",
+    date: "April 2023 - Present",
+    duties: [
+      "Understand the basics of HTML, CSS and JavaScript.",
+      "Developed responsive and intuitive user interfaces using HTML, CSS, and JavaScript, integrating seamlessly with RESTful APIs to enhance website functionality and user experience. ",
+      "Quickly adapted to new tech, showing proactive skill development while maintaining clean frontend code, focusing on detail and readability.",
+      "Utilized modern frontend frameworks such as React.js to build dynamic and interactive user interfaces, expanding proficiency in frontend development technologies.",
+    ],
+  },
+
+  {
     nameTag: "BrainBench",
     title: "Junior Backend Developer(ML), Intern",
     company: "Brainbench Academy",
@@ -45,20 +59,6 @@ export const experiences = [
       "Help develop simple APIs using python.",
       "Train, test, and validate simple machine learning models. This includes using cross-validation to evaluate model performance, tuning parameters, and evaluating the impact of different features on model performance.",
       "Write code that is clean, well-documented, and easy to maintain.",
-    ],
-  },
-
-  {
-    nameTag: "Kinplus",
-    title: "Frontend Web developer, Intern",
-    company: "Kinplus Technologies ",
-    location: "Ado-Ekiti, Ekiti State",
-    date: "April 2023 - Present",
-    duties: [
-      "Understand the basics of HTML, CSS and JavaScript.",
-      "Develop and maintain responsive web pages using said technologies.",
-      "Collaborate with designers and back-end developers to implement user interfaces. This involves working closely with designers to understand their vision and then collaborating with the backend team to implement said vision correctly ",
-      "Test and debug code to ensure optimal performance",
     ],
   },
 ];

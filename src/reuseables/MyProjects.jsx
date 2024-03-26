@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { projects } from "../projectsdata";
 import Skillbar from "./Skillbar";
 
@@ -17,7 +17,7 @@ export const MyProjects = ({ main, num }) => {
 
     return (
       <div
-        className="my-10 bg-gray-50 dark:bg-priFader rounded-lg shadow-md overflow-hidden md:flex  items-center"
+        className="my-10 bg-gray-50 dark:bg-pri rounded-lg shadow-md overflow-hidden md:flex  items-center"
         key={id}
       >
         <div className="p-8 md:w-1/2">
@@ -28,13 +28,30 @@ export const MyProjects = ({ main, num }) => {
           />
         </div>
 
-        <div className="bg-white dark:bg-priFade p-4 dark:text-white md:w-1/2 self-stretch md:flex justify-center ite flex-col">
+        <div className="bg-white dark:bg-priFader p-4 dark:text-white md:w-1/2 self-stretch md:flex justify-center ite flex-col">
           <h2 className="text-semibold mb-6">{name}</h2>
           <p className="font-light text-sm">
             {info.length >= 120 && showAll ? info : info.substring(0, 150)}{" "}
             {show}
           </p>
           <Skillbar skills={skills} />
+
+          <div className="ml-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              className="w-6 h-6 text-sec hover:scale-110"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     );
@@ -44,12 +61,12 @@ export const MyProjects = ({ main, num }) => {
     <div className="m-4 md:mx-12">
       {projects.map((project, index) => {
         if (index < num) {
-          return <Project project={project} />;
+          return <Project project={project} key={index}/>;
         }
       })}
       {main || (
         <button
-          className="py-1 px-3 rounded-2xl mx-auto block bg-sec font-semibold hover:scale-110 transition-all"
+          className="py-1 px-3 rounded-2xl mx-auto block bg-sec dark:text-white font-semibold hover:scale-110 transition-all"
           onClick={() => navigate("/projects")}
         >
           Show all

@@ -2,8 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./styles/App.css";
 import "./styles/Navigation.css";
-import "./styles/Experience.css";
-import "./styles/MyProjects.css";
 import "./styles/Skills.css";
 import "./styles/Contact.css";
 

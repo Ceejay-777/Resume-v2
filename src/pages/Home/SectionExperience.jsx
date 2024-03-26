@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { experiences } from "../../data";
 import arrow from "../../assets/Icons/down.svg";
+import Header from "../../reuseables/Header";
 
 export const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");
@@ -14,42 +15,35 @@ export const SectionExperience = () => {
   };
 
   return (
-    <section className="section section-exp">
-      <h2 className="sectionTitle">Work Experience</h2>
+    <section className="dark:bg-pri py-12 px-4 md:px-8">
+      <Header>Work Experience</Header>
 
-      <div className="exp-opt-bar">
-        {experiences.map((experience, index) => {
-          return (
-            <button
-              key={index}
-              className={`tag ${
-                experience.nameTag === currentExp && "active-exp"
-              }`}
-              onClick={handleExp}
-            >
-              {experience.nameTag}
-            </button>
-          );
-        })}
-      </div>
+      {experiences.map((experience, index) => {
+        const {title, company, date, duties} = experience
+        return (
+          <div className="dark:bg-priFade py-8 px-2 rounded-xl dark:text-white mt-8 bg-gray-200 md:flex justify-center md:px-8 items-center gap-4" key={index}>
+            
+              <div className="md:w-2/5">
+                <p className="font-semibold mb-3 border-2 border-sec rounded-3xl w-fit py-2 px-3">{company}</p>
+                <h4 className=" mb-3">{title}</h4>
+                <p className="text-xs my-3 md:mt-0">{date}</p>
+              </div>
+              <ul className="md:w-3/5 max-w-[540px] mx-auto">
+                {duties.map((duty, index) => {
+                  return (
+                    <li className="flex gap-5 items-center mb-3 text-xs" key={index}>
+                      <img src={arrow} alt=">" className="w-4" />
+                      <p>{duty}</p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          
+        );
+      })}
 
-      <div className="exp-info">
-        <h4 className="exp-title">{current.title}</h4>
-        <p className="exp-company">{current.company}</p>
-        <p className="exp-date">{current.date}</p>
-        <ul>
-          {current.duties.map((duty, index) => {
-            return (
-              <li className="exp-duty" key={index}>
-                <img src={arrow} alt=">" className="right-arrow"/>
-                <p className="exp-duty-text">
-                  {duty}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      
     </section>
   );
 };

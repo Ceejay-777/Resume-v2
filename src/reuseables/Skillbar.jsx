@@ -5,7 +5,7 @@ const Skillbar = ({skills}) => {
     <div className="skillbar">
         {skills.map((skill, ID) => {
             return (
-                <p className="px-6 py-1 rounded-2xl dark:bg-priFader bg-gray-200" key={ID}>{skill}</p>
+                <p className="px-6 py-1 rounded-2xl dark:bg-pri bg-gray-200" key={ID}>{skill}</p>
             )
         })}
     </div>

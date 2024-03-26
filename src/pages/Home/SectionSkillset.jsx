@@ -4,7 +4,7 @@ import Header from "../../reuseables/Header";
 
 export const SectionSkillset = () => {
   return (
-    <section className=" py-12 px-8 bg-gray-50 dark:bg-priFade transition-all duration-500">
+    <section className=" py-12 px-8 bg-white dark:bg-pri transition-all duration-500">
       <div className="max-w-[1024px] mx-auto">
         <Header>Skills</Header>
         <div className="grid gap-4 justify-between justify-items-center items-center thegrid grid-cols-[repeat(auto-fill,_68px)] mt-8">

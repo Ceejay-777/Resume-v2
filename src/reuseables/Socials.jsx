@@ -8,7 +8,7 @@ const Socials = () => {
         return (
           <div
             key={index}
-            className="p-2 dark:bg-white rounded-full hover:scale-110"
+            className="p-2 dark:bg-white bg-gray-200 rounded-full hover:scale-110"
           >
             <a href={socialLink.ref} target="_blank">
               <img

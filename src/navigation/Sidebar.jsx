@@ -22,6 +22,10 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
     };
   }, [sidebarOpen, currentLocation.pathname]);
 
+  useEffect(() => {
+    setSidebarOpen(false)
+  }, [currentLocation.pathname])
+
   return (
     <div
       className={`left-[0] bg-white dark:bg-pri w-52 h-screen transition-all duration-500 p-8 fixed top-[0] ${
