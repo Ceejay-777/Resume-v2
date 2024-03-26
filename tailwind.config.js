@@ -15,8 +15,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        pri: "#2c3e50",
-        priFade: "rgba(44, 62, 80, 0.9)",
+        // pri: "#2c3e50",
+        pri: "hsl(210, 29%, 20%)",
+        priFade: "hsl(210, 29%, 24%)",
+        priFader: "hsl(210, 29%, 28%)",
         sec: "#d4af37",
         acc: "#d7b9c4",
         com: "#a9a9a9",

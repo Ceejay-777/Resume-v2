@@ -63,37 +63,6 @@ export const experiences = [
   },
 ];
 
-export const skillset = [
-  {
-    skill: "Python",
-    rating: 80,
-  },
-  {
-    skill: "HTML",
-    rating: 90,
-  },
-  {
-    skill: "CSS",
-    rating: 80,
-  },
-  {
-    skill: "JavaScript",
-    rating: 85,
-  },
-  {
-    skill: "ReactJS",
-    rating: 70,
-  },
-  {
-    skill: "Tailwind CSS",
-    rating: 30,
-  },
-  {
-    skill: "JQuery",
-    rating: 80,
-  },
-];
-
 export const skills = [
   {icon: javascript, name:"Javascript"}, 
   {icon: react, name:"React"}, 

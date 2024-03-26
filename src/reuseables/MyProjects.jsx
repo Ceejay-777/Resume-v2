@@ -1,67 +1,59 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { projects } from "../projectsdata";
 import Skillbar from "./Skillbar";
 
-
 export const MyProjects = ({ main, num }) => {
   const [showAll, setShowAll] = useState(false);
-  const show = <span className="accent" onClick={() => setShowAll(!showAll)}>
-    {showAll ? "show less" : "show more"}...
-  </span>
+  const navigate = useNavigate();
+  const show = (
+    <span className="text-sec" onClick={() => setShowAll(!showAll)}>
+      {showAll ? "Show less" : " ...show more"}
+    </span>
+  );
+
+  const Project = ({ project }) => {
+    const { name, id, image, info, skills } = project;
+
+    return (
+      <div
+        className="my-10 bg-gray-50 dark:bg-priFader rounded-lg shadow-md overflow-hidden md:flex  items-center"
+        key={id}
+      >
+        <div className="p-8 md:w-1/2">
+          <img
+            src={image}
+            alt="Project"
+            className="w-full h-auto rounded-2xl"
+          />
+        </div>
+
+        <div className="bg-white dark:bg-priFade p-4 dark:text-white md:w-1/2 self-stretch md:flex justify-center ite flex-col">
+          <h2 className="text-semibold mb-6">{name}</h2>
+          <p className="font-light text-sm">
+            {info.length >= 120 && showAll ? info : info.substring(0, 150)}{" "}
+            {show}
+          </p>
+          <Skillbar skills={skills} />
+        </div>
+      </div>
+    );
+  };
 
   return (
-    <div className="projects">
+    <div className="m-4 md:mx-12">
       {projects.map((project, index) => {
-        const { name, id, images, info, skills } = project;
         if (index < num) {
-          return (
-            <div className="project" key={id}>
-              <div className="project-header">
-                <h2>{index + 1}.</h2>
-                <h2>{name} project</h2>
-              </div>
-
-              <div className="project-imgs">
-                <div>
-                  <img
-                    src={images[0]}
-                    alt="Project"
-                    className=" project-img main-project-img"
-                  />
-                </div>
-
-                {main && (
-                  <div className={images.length !== 2 ? "more-project-imgs" : "more-project-imgs extra-project-img"}>
-                    {images.slice(1).map((img, index) => {
-                      return (
-                        <div className="project-img-container" key={index}>
-                          <img
-                            src={img}
-                            alt="Project"
-                            className={"project-img"}
-                          />
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
-
-              {info.length >= 150 ? showAll ? (
-                <p className="project-info">{info}  {show}</p>
-              ) : (
-                <p className="project-info">{info.substring(0, 150)} {show}</p>
-              ) : <p className="project-info">{info}</p>}
-              <Skillbar skills={skills} />
-            </div>
-          );
+          return <Project project={project} />;
         }
       })}
       {main || (
-        <Link to="/projects" className="show-all-projects">
-          <button className="btn">Show all</button>
-        </Link>
+        <button
+          className="py-1 px-3 rounded-2xl mx-auto block bg-sec font-semibold hover:scale-110 transition-all"
+          onClick={() => navigate("/projects")}
+        >
+          Show all
+        </button>
       )}
     </div>
   );

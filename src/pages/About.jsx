@@ -1,11 +1,9 @@
 import React from "react";
-import { skillset } from "../data";
 import MyImage from "../reuseables/MyImage";
-import Skillbar from "../reuseables/Skillbar";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  const skills = skillset.map((skill) => skill.skill);
+  // const skills = skillset.map((skill) => skill.skill);
   return (
     <div className="main">
       <MyImage />
@@ -68,7 +66,7 @@ const About = () => {
           page.
         </p>
 
-        <Skillbar skills={skills} />
+        {/* <Skillbar skills={skills} /> */}
       </div>
     </div>
   );
