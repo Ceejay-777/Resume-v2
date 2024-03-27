@@ -13,10 +13,7 @@ const SectionIntro = () => {
               Hello! I'm <span className="accent">Covenant</span>
             </p>
             <p className="dark:text-white font-light text-sm mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              eos eveniet inventore quae officia nam blanditiis quia consequatur
-              consectetur neque repellat dolores asperiores, sunt non veniam
-              reprehenderit voluptas necessitatibus dignissimos?
+              Enthusiastic Computer Engineering student with a strong foundation in front-end development. I'm proficient in JavaScript (ES6+), HTML/CSS, React, Tailwind CSS, and Python. My passion lies in building visually-appealing and user-friendly web interfaces. 
             </p>
             <Socials />
           </div>

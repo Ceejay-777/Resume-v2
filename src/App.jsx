@@ -15,7 +15,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const themeContext = createContext()
 
 function App() {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
 
   useEffect(() => {
     const bodyClasses = document.body.classList;

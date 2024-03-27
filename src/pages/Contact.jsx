@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Skillbar from "../reuseables/Skillbar";
 import TextareaAutosize from "react-textarea-autosize";
 import Socials from "../reuseables/Socials.jsx";
+import Header from "../reuseables/Header.jsx";
 
 const Contact = () => {
   const [fname, setFname] = useState("");
@@ -20,8 +21,8 @@ const Contact = () => {
     setMessage(event.target.value);
   };
   return (
-    <div className="main">
-      <h1 className="sectionTitle">Contact Me</h1>
+    <div className="main dark:bg-pri transition-all duration-500">
+      <Header>About Me</Header>
 
       <div className="contact-form-container">
         <form onSubmit={handleSubmit} className="contact-form">
@@ -57,7 +58,7 @@ const Contact = () => {
               placeholder="Comment here"
               cols={6}
               rows={6}
-              className="mytextarea"
+              className="mytextarea border-2"
             ></textarea>
           </div>
           <button type="submit" className="btn">
