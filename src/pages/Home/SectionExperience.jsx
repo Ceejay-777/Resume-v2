@@ -28,7 +28,7 @@ export const SectionExperience = () => {
                 <h4 className=" mb-3">{title}</h4>
                 <p className="text-xs my-3 md:mt-0">{date}</p>
               </div>
-              <ul className="md:w-3/5 max-w-[540px] mx-auto">
+              <ul className="md:w-3/5 max-w-[540px] mx-4">
                 {duties.map((duty, index) => {
                   return (
                     <li className="flex gap-5 items-center mb-3 text-xs" key={index}>

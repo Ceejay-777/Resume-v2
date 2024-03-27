@@ -17,21 +17,29 @@ import bootstrap from "./assets/Icons/bootstrap.svg";
 import tailwindCSS from "./assets/Icons/tailwindCSS.svg";
 
 export const socialLinks = [
-  {
-    icon: gmail,
-    ref: "mailto: covenantjoshade.com",
-  },
-  {
-    icon: linkedin,
-    ref: "https://www.linkedin.com/in/covenant-joshua-5080aa228",
-  },
-  { icon: github, ref: "https://github.com/Ceejay-777" },
-  {
-    icon: phone,
-    ref: "https://wa.me/2349069189724",
-  },
-  { icon: Xlogo, ref: "https://twitter.com/Cee_Jay_777" },
-];
+  {fullLinks : 
+    [{
+      icon: gmail,
+      ref: "mailto: covenantjoshade@gmail.com.com",
+      account: "email",
+      text: "covenantjoshade@gmail.com",
+    },
+    {
+      icon: phone,
+      ref: "https://wa.me/2349069189724",
+      account: "phone",
+      text: "+234 90 691 8 9724",
+    }],
+
+  iconLinks : [{
+      icon: linkedin,
+      ref: "https://www.linkedin.com/in/covenant-joshua-5080aa228",
+      account: "linkedin",
+    },
+    { icon: github, ref: "https://github.com/Ceejay-777", account: "github" },
+    { icon: Xlogo, ref: "https://twitter.com/Cee_Jay_777", account: "X" },
+  ]
+}];
 
 export const experiences = [
   {
@@ -64,16 +72,16 @@ export const experiences = [
 ];
 
 export const skills = [
-  {icon: javascript, name:"Javascript"}, 
-  {icon: react, name:"React"}, 
-  {icon: html, name:"HTML"}, 
-  {icon: css, name:"CSS"}, 
-  {icon: nextjs, name:"NextJS"}, 
-  {icon: nodejs, name:"NodeJS"}, 
-  {icon: tailwindCSS, name:"Tailwindcss"}, 
-  {icon: bootstrap, name:"Bootstrap"}, 
-  {icon: python, name:"Python"}, 
-  {icon: figma, name:"Figma"}, 
-  {icon: flask, name:"Flask"}, 
-  {icon: git, name:"Git"}, 
-]
+  { icon: javascript, name: "Javascript" },
+  { icon: react, name: "React" },
+  { icon: html, name: "HTML" },
+  { icon: css, name: "CSS" },
+  { icon: nextjs, name: "NextJS" },
+  { icon: nodejs, name: "NodeJS" },
+  { icon: tailwindCSS, name: "Tailwindcss" },
+  { icon: bootstrap, name: "Bootstrap" },
+  { icon: python, name: "Python" },
+  { icon: figma, name: "Figma" },
+  { icon: flask, name: "Flask" },
+  { icon: git, name: "Git" },
+];
