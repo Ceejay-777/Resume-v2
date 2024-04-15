@@ -12,12 +12,12 @@ export const MyProjects = ({ main, num }) => {
     </span>
   );
 
-  const Project = ({ project }) => {
+  const Project = ({ project, key }) => {
     const { name, id, image, info, skills } = project;
 
     return (
       <div
-        className="my-10 bg-gray-50 dark:bg-pri rounded-lg shadow-md overflow-hidden md:flex  items-center"
+        className={`my-10 bg-gray-50 dark:bg-pri rounded-lg shadow-md overflow-hidden md:flex  items-center`}
         key={id}
       >
         <div className="p-8 md:w-1/2">
