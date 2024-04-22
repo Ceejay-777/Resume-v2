@@ -3,7 +3,7 @@ import horizon1 from "./assets/Project_images/horizon/horizon1.JPG";
 import faqAccordion1 from "./assets/Project_images/faq_accordion/shot1.jpg";
 import ratingCard1 from "./assets/Project_images/rating_component_card/shot1.jpg";
 import flipCard1 from "./assets/Project_images/flip_card/shot1.jpg";
-import gridale from "./assets/Project_images/gridale/gridale.jpg";
+import gridale from "./assets/Project_images/gridale/Gridale.jpg";
 import multistep from "./assets/Project_images/multistep/multistep.jpg";
 import pipeline from "./assets/Project_images/pipeline/pipeline.jpg";
 
