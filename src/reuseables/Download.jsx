@@ -3,9 +3,9 @@ import React from 'react'
 const Download = () => {
   return (
     <a href="/Adeosun-Covenant-Joshua.pdf" target='_blank'>
-      <div className='text-white dark:text-pri font-semibold px-2 py-1 dark:bg-white bg-pri rounded-xl hover:scale-110'>
+      <button className='text-black dark:text-white border-2 text-sm px-4 py-1 rounded-full hover:border-sec'>
         Download CV
-      </div>
+      </button>
     </a>
   )
 }

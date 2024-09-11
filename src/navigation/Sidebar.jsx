@@ -34,29 +34,35 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
     >
       <Close sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <nav>
-        <ul>
-          <li className="list-none mb-5 text-center">
+        <ul className="list-none mb-5 text-center">
+          <li>
             <Link
               to="/"
-              className="text-xl font-semibold border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-com mb-4"
+              className="border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-black mb-4 dark:text-white"
             >
               Home
             </Link>
+          </li>
+          <li>
             <Link
               to="about"
-              className="text-xl font-semibold border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-com mb-4"
+              className="border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-black mb-4 dark:text-white"
             >
               About
             </Link>
+          </li>
+          <li>
             <Link
               to="projects"
-              className="text-xl font-semibold border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-com mb-4"
+              className="border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-black mb-4 dark:text-white"
             >
               Projects
             </Link>
+          </li>
+          <li>
             <Link
               to="contact"
-              className="text-xl font-semibold border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-com mb-4"
+              className="border-2 border-sec p-1 rounded-3xl block hover:scale-110 transition-all text-black mb-4 dark:text-white"
             >
               Contact
             </Link>

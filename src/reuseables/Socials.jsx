@@ -26,7 +26,7 @@ const Socials = () => {
                         />
                       </a>
                     </div>
-                      <a href={ref} target="_blank" className="text-sec hover:underline">{text}</a>
+                      <a href={ref} target="_blank" className="text-sec hover:underline text-sm md:text-md">{text}</a>
                   </div>
                 );
             
