@@ -23,7 +23,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="about"
+              to="/about"
               className="hover:underline transition-all text-com md:border-0 md:p-0"
             >
               About
