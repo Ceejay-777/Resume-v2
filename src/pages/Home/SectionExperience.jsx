@@ -18,20 +18,28 @@ export const SectionExperience = () => {
     <section className="dark:bg-pri py-12 px-4 md:px-8">
       <Header>Work Experience</Header>
 
-      {experiences.map((experience, index) => {
-        const {title, company, date, duties} = experience
+      {experiences.map((experience,) => {
+        const { title, company, date, duties } = experience;
         return (
-          <div className="dark:bg-priFade py-8 px-2 rounded-xl dark:text-white mt-8 bg-gray-200 md:flex justify-center md:px-8 items-center gap-4" key={index}>
-            
-              <div className="md:w-2/5">
-                <p className="font-semibold mb-3 border-2 border-sec rounded-3xl w-fit py-2 px-3">{company}</p>
-                <h4 className=" mb-3">{title}</h4>
-                <p className="text-xs my-3 md:mt-0">{date}</p>
+          <fieldset
+            className="border-4 px-4 my-8 border-gray-600 dark:border-gray-300 dark:text-white max-w-[1024px] mx-auto"
+            key={company}
+          >
+            <legend className="font-semibold mb-3 text-xl rounded-3xl w-fit pl-6 pr-12">
+              {company}
+            </legend>
+            <div className="p-4 gap-4">
+              <div className="md:w-2/5 md:float-left md:mb-1 mb-2">
+                <h4 className=" mb-3 text-xl">{title}</h4>
+                <p className="text-sm my-3 md:mt-0">{date}</p>
               </div>
-              <ul className="md:w-3/5 max-w-[540px] mx-4">
+              <ul className=" mx-4 ">
                 {duties.map((duty, index) => {
                   return (
-                    <li className="flex gap-5 items-center mb-3 text-xs" key={index}>
+                    <li
+                      className="flex gap-5 items-center mb-3 text-xs"
+                      key={index}
+                    >
                       <img src={arrow} alt=">" className="w-4" />
                       <p>{duty}</p>
                     </li>
@@ -39,11 +47,9 @@ export const SectionExperience = () => {
                 })}
               </ul>
             </div>
-          
+          </fieldset>
         );
       })}
-
-      
     </section>
   );
 };

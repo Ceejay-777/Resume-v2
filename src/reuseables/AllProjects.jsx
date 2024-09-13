@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { projects, projectsLength } from "../data.js";
+import { projects } from "../data.js";
 import Project from "./Project.jsx";
 
 export const MyProjects = ({ main }) => {

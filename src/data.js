@@ -25,7 +25,7 @@ import multistep from "./assets/Project_images/multistepform_mockup.png";
 import pipeline from "./assets/Project_images/pipeline_mockup.png";
 import portfolio from "./assets/Project_images/portfolio_mockup.png"
 import rufus from "./assets/Project_images/rufus_mockup.png"
-import rps from "./assets/Project_images/rps_mockup.png"
+import rps from "./assets/Project_images/RPS_mockup.png"
 
 export const projects = [
   {
@@ -118,9 +118,6 @@ export const projects = [
   },
 ];
 
-export const projectsLength = projects.length
-
-
 export const socialLinks = [
   {fullLinks : 
     [{
@@ -148,11 +145,25 @@ export const socialLinks = [
 
 export const experiences = [
   {
+    nameTag: "SSRL",
+    title: "Frontend Web developer, Intern",
+    company: "Smart Systems Research Lab",
+    location: "FUTA, Akure",
+    date: "April 2024 - Present",
+    duties: [
+      "Constantly worked on improving existing skills and add additional skills.",
+      "Collaborated with other lab interns to develop various lab projects.",
+      "Developed good rapport with other interns and members of my team.",
+      "Participated in various lab organized events such as hackatons and ideatons.",
+    ],
+  },
+
+  {
     nameTag: "Kinplus",
     title: "Frontend Web developer, Intern",
     company: "Kinplus Technologies ",
     location: "Ado-Ekiti, Ekiti State",
-    date: "April 2023 - Present",
+    date: "April 2023 - August 2023",
     duties: [
       "Understand the basics of HTML, CSS and JavaScript.",
       "Developed responsive and intuitive user interfaces using HTML, CSS, and JavaScript, integrating seamlessly with RESTful APIs to enhance website functionality and user experience. ",

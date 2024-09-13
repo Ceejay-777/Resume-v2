@@ -1,11 +1,10 @@
 import React from 'react'
 import { MyProjects } from '../reuseables/AllProjects'
-import { projects, projectsLength } from '../data'
 import Header from '../reuseables/Header'
 
 const Projects = () => {
   return (
-    <main className='main dark:bg-priFade transition-all duration-500'>
+    <main className='main dark:bg-priFader transition-all duration-500'>
       <Header>Projects</Header>
       <MyProjects main={true}/>
       <p className='text-center mb-10 dark:text-white'>
