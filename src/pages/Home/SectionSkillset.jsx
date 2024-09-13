@@ -4,21 +4,19 @@ import Header from "../../reuseables/Header";
 
 export const SectionSkillset = () => {
   return (
-    <section className=" py-12 px-8 bg-white dark:bg-pri transition-all duration-500">
+    <section className="py-12 px-8 bg-white dark:bg-pri transition-all duration-500">
       <div className="max-w-[1024px] mx-auto">
         <Header>Skills</Header>
-        <div className="grid gap-4 justify-between justify-items-center items-center thegrid grid-cols-[repeat(auto-fill,_68px)] mt-8">
+        <div className="mt-12 grid md:grid-cols-6 grid-cols-4 justify-items-center items-center">
           {skills.map((skill, index) => {
             const { icon, name } = skill;
             return (
-              <div className="flex flex-col items-center w-fit" key={index}>
-                <div className="w-16 h-16" key={index}>
+                <div
+                  className={`md:w-20 w-16 aspect-square bg-sec/30 dark:bg-gray-100/50 p-1 flex flex-col items-center border border-pri rounded-xl dark:border-slate-100 ${index%2 == 0 && "mt-12"}`}
+                  key={name}
+                >
                   <img src={icon} alt={name} className="w-full h-full" />
                 </div>
-                <p className="dark:text-white text-xs w-fit font-semibold">
-                  {name}
-                </p>
-              </div>
             );
           })}
         </div>

@@ -19,7 +19,7 @@ export default {
         // pri: "hsl(210, 29%, 20%)",
         pri: "#444444",
         priFade: "#555555",
-        priFader: "hsl(210, 29%, 28%)",
+        priFader: "#333333",
         // sec: "#007CED",
         sec: "#d4af37",
         // acc: "#007CED",

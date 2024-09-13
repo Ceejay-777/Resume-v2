@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 const SectionAbout = () => {
   return (
     <section className="bg-gray-100 dark:bg-priFade transition-all duration-500">
-      <div className="max-w-[1200px] py-8 mx-auto">
+      <div className="max-w-[1200px] py-12 mx-auto">
         <Header>About</Header>
-        <div className="mt-12 px-10">
+        <div className="mt-12 px-8 md:px-16">
           <div className="md:w-1/2 md:float-right aspect-video rounded-xl bg-[url('./assets/CeejayImage3.jpg')] bg-contain bg-no-repeat self-start m-6 md:image-shadow bg-center mb-2"></div>
           <div className="dark:text-white mt-8 md:mt-0 text-sm leading-loose">
-            <p className="text-xl font-semibold no">
-              I'm a <span className="text-sec">dedicated</span> and{" "}
-              <span className="text-sec">versatile</span> developer with a focus
-              on frontend development, specializing in
-              <span className="text-sec"> Next.js</span>,{" "}
-              <span className="text-sec">React.js</span>,{" "}
-              <span className="text-sec">Tailwind CSS</span>, and {" "}
-              <span className="text-sec">python</span>.
+            <p className="text-xl font-semibold whitespace-break-spaces">
+              I'm a <span className="text-sec">dedicated</span> and
+              <span className="text-sec"> versatile</span> developer with a
+              focus on frontend development, specializing in
+              <span className="text-sec"> Next.js</span>,
+              <span className="text-sec"> React.js</span>,
+              <span className="text-sec"> Tailwind CSS</span>, and
+              <span className="text-sec"> python</span>.
             </p>
 
             <br />
@@ -51,7 +51,7 @@ const SectionAbout = () => {
               <a
                 href="https://github.com/Ceejay-777"
                 target="_blank"
-                className="text-sec hover:underline"
+                className="text-sec hover:underline font-semibold"
               >
                 GitHub profile
               </a>
@@ -69,12 +69,12 @@ const SectionAbout = () => {
               You can reach out to me for work or collaborations via email at{" "}
               <a
                 href="mailto: covenantcrackslord01@gmail.com"
-                className="text-sec hover:underline"
+                className="text-sec hover:underline font-semibold"
               >
                 covenantcrackslord01@gmail.com
               </a>{" "}
               or reach me through the{" "}
-              <Link to="/contact" className="text-sec hover:underline">
+              <Link to="/contact" className="text-sec hover:underline font-semibold">
                 Contact
               </Link>{" "}
               page.
