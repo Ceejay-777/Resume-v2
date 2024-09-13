@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const SectionAbout = () => {
   return (
     <section className="bg-gray-100 dark:bg-priFade transition-all duration-500">
-      <div className="max-w-[1200px] py-12 mx-auto">
+      <div className="max-w-[1400px] py-12 mx-auto">
         <Header>About</Header>
         <div className="mt-12 px-8 md:px-16">
           <div className="md:w-1/2 md:float-right aspect-video rounded-xl bg-[url('./assets/CeejayImage3.jpg')] bg-contain bg-no-repeat self-start m-6 md:image-shadow bg-center mb-2"></div>
