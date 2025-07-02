@@ -1,15 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import "./styles/App.css";
 import "./styles/Navigation.css";
-
-import Home from "./pages/Home/Home.jsx";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import MainSharedLayout from "./sharedLayouts/MainSharedLayout";
 import { createContext, useContext, useEffect, useState } from "react";
-import Certifications from "./pages/Certifications.jsx";
+import Routes from "./routes/routes";
 
 const themeContext = createContext()
 
@@ -29,17 +21,7 @@ function App() {
 
   return (
     <themeContext.Provider value={{ theme, setTheme }}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<MainSharedLayout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="projects" element={<Projects />}></Route>
-            <Route path="contact" element={<Contact />} />
-            <Route path="certifications" element={<Certifications />} />
-          </Route>
-        </Routes>
-      </Router>
+      <Routes />
     </themeContext.Provider>
   );
 }
