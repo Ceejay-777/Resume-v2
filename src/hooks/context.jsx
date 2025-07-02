@@ -2,17 +2,16 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
-    const bodyClasses = document.body.classList;
+    const bodyClasses = document.documentElement.classList;
 
-    if (bodyClasses.contains("dark")) {
+    if (theme === "dark") {
+      bodyClasses.add("dark");
+    } else {
       bodyClasses.remove("dark");
-    } else if (bodyClasses.contains("light")) {
-      bodyClasses.remove("light");
     }
-    bodyClasses.add(theme);
   }, [theme]);
 
   return (
