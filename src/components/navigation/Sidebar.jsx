@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import Close from "../../assets/Icons/Close";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import Theme from "../ThemeSwitch";
-import Download from "../Download";
+import Theme from "../ui/ThemeSwitch";
+import Download from "../ui/Download";
 
 const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
   const currentLocation = useLocation();

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { usethemeContext } from "../App";
+import { useAppContext } from "../../hooks/context";
 
 const Theme = () => {
-  const { theme, setTheme } = usethemeContext()
+  const { theme, setTheme } = useAppContext();
 
   return (
     <div

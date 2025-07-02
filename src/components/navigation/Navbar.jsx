@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Cee from "../../assets/Cee.jsx";
 import Sidebar from "./Sidebar.jsx";
 import Hamburger from "../../assets/Icons/Hamburger.jsx";
-import Theme from "../ThemeSwitch.jsx";
+import Theme from "../ui/ThemeSwitch.jsx";
 import { Link } from "react-router-dom";
-import Download from "../Download.jsx";
+import Download from "../ui/Download.jsx";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
