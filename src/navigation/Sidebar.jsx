@@ -30,7 +30,7 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
     <div
       className={`left-[0] bg-white dark:bg-pri w-52 h-screen transition-all duration-500 p-8 fixed top-[0] ${
         sidebarOpen && "translate-x-[0]"
-      } translate-x-[-100%]`}
+      } -translate-x-full`}
     >
       <Close sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <nav>

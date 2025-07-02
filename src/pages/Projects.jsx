@@ -4,7 +4,7 @@ import Header from '../reuseables/Header'
 
 const Projects = () => {
   return (
-    <main className='main dark:bg-priFader transition-all duration-500'>
+    <main className='main dark:bg-pri-fader transition-all duration-500'>
       <Header>Projects</Header>
       <MyProjects main={true}/>
       <p className='text-center mb-10 dark:text-white'>
