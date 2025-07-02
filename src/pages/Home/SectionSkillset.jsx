@@ -1,6 +1,6 @@
 import React from "react";
 import { skills } from "../../data";
-import Header from "../../reuseables/Header";
+import Header from "../../components/Header";
 
 export const SectionSkillset = () => {
   return (
@@ -11,12 +11,14 @@ export const SectionSkillset = () => {
           {skills.map((skill, index) => {
             const { icon, name } = skill;
             return (
-                <div
-                  className={`md:w-20 w-16 aspect-square bg-sec/30 dark:bg-gray-100/50 p-1 flex flex-col items-center border border-pri rounded-xl dark:border-slate-100 ${index%2 == 0 && "mt-12"}`}
-                  key={name}
-                >
-                  <img src={icon} alt={name} className="w-full h-full" />
-                </div>
+              <div
+                className={`md:w-20 w-16 aspect-square bg-sec/30 dark:bg-gray-100/50 p-1 flex flex-col items-center border border-pri rounded-xl dark:border-slate-100 ${
+                  index % 2 == 0 && "mt-12"
+                }`}
+                key={name}
+              >
+                <img src={icon} alt={name} className="w-full h-full" />
+              </div>
             );
           })}
         </div>

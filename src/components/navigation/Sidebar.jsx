@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Close from "../assets/Icons/Close";
+import Close from "../../assets/Icons/Close";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import Theme from "../reuseables/Theme";
-import Download from "../reuseables/Download";
+import Theme from "../ThemeSwitch";
+import Download from "../Download";
 
 const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
   const currentLocation = useLocation();
@@ -23,8 +23,8 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
   }, [sidebarOpen, currentLocation.pathname]);
 
   useEffect(() => {
-    setSidebarOpen(false)
-  }, [currentLocation.pathname])
+    setSidebarOpen(false);
+  }, [currentLocation.pathname]);
 
   return (
     <div

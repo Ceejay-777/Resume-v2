@@ -1,5 +1,5 @@
-import Header from "../../reuseables/Header";
-import { MyProjects } from "../../reuseables/AllProjects";
+import Header from "../../components/Header";
+import { MyProjects } from "../../components/AllProjects";
 
 const SectionProjects = () => {
   return (

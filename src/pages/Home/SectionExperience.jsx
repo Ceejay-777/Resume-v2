@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { experiences } from "../../data";
 import arrow from "../../assets/Icons/down.svg";
-import Header from "../../reuseables/Header";
+import Header from "../../components/Header";
 
 export const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");

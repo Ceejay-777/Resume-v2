@@ -1,7 +1,6 @@
-import "./styles/App.css";
-import "./styles/Navigation.css";
+import "./App.css";
 import { createContext, useContext, useEffect, useState } from "react";
-import Routes from "./routes/routes";
+import MyRoutes from "./routes/routes";
 
 const themeContext = createContext()
 
@@ -21,7 +20,7 @@ function App() {
 
   return (
     <themeContext.Provider value={{ theme, setTheme }}>
-      <Routes />
+      <MyRoutes />
     </themeContext.Provider>
   );
 }

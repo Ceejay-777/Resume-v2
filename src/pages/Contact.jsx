@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import Skillbar from "../reuseables/Skillbar";
+import Skillbar from "../components/Skillbar";
 import TextareaAutosize from "react-textarea-autosize";
-import Socials from "../reuseables/Socials.jsx";
-import Header from "../reuseables/Header.jsx";
+import Socials from "../components/Socials.jsx";
+import Header from "../components/Header.jsx";
 
 const Contact = () => {
   const [fname, setFname] = useState("");

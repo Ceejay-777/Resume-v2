@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../reuseables/Header";
+import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 
 const SectionAbout = () => {
@@ -74,7 +74,10 @@ const SectionAbout = () => {
                 covenantcrackslord01@gmail.com
               </a>{" "}
               or reach me through the{" "}
-              <Link to="/contact" className="text-sec hover:underline font-semibold">
+              <Link
+                to="/contact"
+                className="text-sec hover:underline font-semibold"
+              >
                 Contact
               </Link>{" "}
               page.

@@ -1,5 +1,5 @@
-import Header from "../../reuseables/Header.jsx";
-import Socials from "../../reuseables/Socials.jsx";
+import Header from "../../components/Header.jsx";
+import Socials from "../../components/Socials.jsx";
 
 const SectionIntro = () => {
   return (

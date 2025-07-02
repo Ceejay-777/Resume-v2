@@ -1,5 +1,5 @@
 import React from 'react'
-import Cee from '../assets/Cee'
+import Cee from '../../assets/Cee'
 const Footer = () => {
   return (
     <footer className='w-full dark:bg-pri-fade bg-gray-100 h-20 flex justify-center'>
