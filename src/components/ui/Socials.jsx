@@ -1,17 +1,17 @@
 import React from "react";
-import { socialLinks } from "../data";
+import { socialLinks } from "../../data";
 
 const Socials = () => {
   return (
     <div className="gap-4 mt-8 max-w-[480px] w-fit items-center">
       {socialLinks.map((linkTypes, index) => {
-        const {fullLinks, iconLinks} = linkTypes;
+        const { fullLinks, iconLinks } = linkTypes;
 
         return (
           <div key={index}>
             <div className="mb-2">
               {fullLinks.map((socialLink, index) => {
-                const {icon, ref, account, text} = socialLink;
+                const { icon, ref, account, text } = socialLink;
                 return (
                   <div className="flex gap-6 items-center mb-2" key={index}>
                     <div
@@ -26,10 +26,15 @@ const Socials = () => {
                         />
                       </a>
                     </div>
-                      <a href={ref} target="_blank" className="text-sec hover:underline text-sm md:text-md">{text}</a>
+                    <a
+                      href={ref}
+                      target="_blank"
+                      className="text-sec hover:underline text-sm md:text-md"
+                    >
+                      {text}
+                    </a>
                   </div>
                 );
-            
               })}
             </div>
             <div className="flex gap-6">
@@ -49,12 +54,10 @@ const Socials = () => {
                     </a>
                   </div>
                 );
-
               })}
-            
             </div>
           </div>
-        )
+        );
       })}
     </div>
   );

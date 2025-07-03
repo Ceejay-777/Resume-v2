@@ -27,7 +27,7 @@ const Project = ({ project }) => {
         </a>
       </div>
 
-      <div className="bg-white dark:bg-priFader p-4 dark:text-white md:w-1/2 self-stretch md:flex justify-center flex-col md:rounded-r-xl rounded-b-xl">
+      <div className="bg-white dark:bg-pri-fader p-4 dark:text-white md:w-1/2 self-stretch md:flex justify-center flex-col md:rounded-r-xl rounded-b-xl">
         <h2 className="text-xl font-semibold mb-6 ">{name}</h2>
         <p className="font-light text-sm">
           {info.length >= 120 && showAll ? info : info.substring(0, 150)} {show}

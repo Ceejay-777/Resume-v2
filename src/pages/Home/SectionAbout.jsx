@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../../reuseables/Header";
+import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 
 const SectionAbout = () => {
   return (
-    <section className="bg-gray-100 dark:bg-priFade transition-all duration-500">
+    <section className="bg-gray-100 dark:bg-pri-fade transition-all duration-500">
       <div className="max-w-[1400px] py-12 mx-auto">
         <Header>About</Header>
         <div className="mt-12 px-8 md:px-16">
@@ -74,7 +74,10 @@ const SectionAbout = () => {
                 covenantcrackslord01@gmail.com
               </a>{" "}
               or reach me through the{" "}
-              <Link to="/contact" className="text-sec hover:underline font-semibold">
+              <Link
+                to="/contact"
+                className="text-sec hover:underline font-semibold"
+              >
                 Contact
               </Link>{" "}
               page.

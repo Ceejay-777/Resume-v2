@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import Skillbar from "../reuseables/Skillbar";
+import Skillbar from "../components/Skillbar";
 import TextareaAutosize from "react-textarea-autosize";
-import Socials from "../reuseables/Socials.jsx";
-import Header from "../reuseables/Header.jsx";
+import Socials from "../components/ui/Socials.jsx";
+import Header from "../components/Header.jsx";
 
 const Contact = () => {
   const [fname, setFname] = useState("");
@@ -15,13 +15,12 @@ const Contact = () => {
     console.log(fname, email, message);
   };
 
-  
   return (
     <div className="main dark:bg-pri transition-all duration-500">
       <Header>Contact Me</Header>
-        <div className="mx-auto w-fit mt-8">
-          <Socials />
-        </div>
+      <div className="mx-auto w-fit mt-8">
+        <Socials />
+      </div>
     </div>
   );
 };
