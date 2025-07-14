@@ -3,7 +3,7 @@ import Socials from "../../components/ui/Socials.jsx";
 
 const SectionIntro = () => {
   return (
-    <section className=" bg-white px-8 py-10 dark:bg-pri transition-all duration-500">
+    <section className=" bg-background px-8 py-10 dark:bg-dark-background transition-all duration-500">
       <div className="max-w-[1200px] mx-auto">
         <Header>Me</Header>
         <div className="md:flex md:flex-row-reverse md:gap-[10%] md:items-center md:p-8 ">

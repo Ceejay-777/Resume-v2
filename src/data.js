@@ -23,9 +23,9 @@ import flipCard from "./assets/Project_images/cardflip_mockup.png";
 import gridale from "./assets/Project_images/gridale_mockup.png";
 import multistep from "./assets/Project_images/multistepform_mockup.png";
 import pipeline from "./assets/Project_images/pipeline_mockup.png";
-import portfolio from "./assets/Project_images/portfolio_mockup.png"
-import rufus from "./assets/Project_images/rufus_mockup.png"
-import rps from "./assets/Project_images/RPS_mockup.png"
+import portfolio from "./assets/Project_images/portfolio_mockup.png";
+import rufus from "./assets/Project_images/rufus_mockup.png";
+import rps from "./assets/Project_images/RPS_mockup.png";
 
 export const projects = [
   {
@@ -119,29 +119,33 @@ export const projects = [
 ];
 
 export const socialLinks = [
-  {fullLinks : 
-    [{
-      icon: gmail,
-      ref: "mailto: covenantjoshade@gmail.com.com",
-      account: "email",
-      text: "covenantjoshade@gmail.com",
-    },
-    {
-      icon: phone,
-      ref: "https://wa.me/2349069189724",
-      account: "phone",
-      text: "+234 90 691 8 9724",
-    }],
+  {
+    fullLinks: [
+      {
+        icon: gmail,
+        ref: "mailto: covenantjoshade@gmail.com.com",
+        account: "email",
+        text: "covenantjoshade@gmail.com",
+      },
+      {
+        icon: phone,
+        ref: "https://wa.me/2349069189724",
+        account: "phone",
+        text: "+234 90 691 8 9724",
+      },
+    ],
 
-  iconLinks : [{
-      icon: linkedin,
-      ref: "https://www.linkedin.com/in/covenant-joshua-5080aa228",
-      account: "linkedin",
-    },
-    { icon: github, ref: "https://github.com/Ceejay-777", account: "github" },
-    { icon: Xlogo, ref: "https://twitter.com/Cee_Jay_777", account: "X" },
-  ]
-}];
+    iconLinks: [
+      {
+        icon: linkedin,
+        ref: "https://www.linkedin.com/in/covenant-joshua-5080aa228",
+        account: "linkedin",
+      },
+      { icon: github, ref: "https://github.com/Ceejay-777", account: "github" },
+      { icon: Xlogo, ref: "https://twitter.com/Cee_Jay_777", account: "X" },
+    ],
+  },
+];
 
 export const experiences = [
   {
@@ -201,3 +205,10 @@ export const skills = [
   { icon: flask, name: "Flask" },
   { icon: git, name: "Git" },
 ];
+
+export const slideUpVariant = {
+  initial: { y: "100%" },
+  animate: { y: 0 },
+  exit: { y: "-100%" },
+  transition: { duration: 1, ease: "easeInOut" },
+};

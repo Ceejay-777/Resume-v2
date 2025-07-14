@@ -10,8 +10,8 @@ const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="dark:bg-pri bg-white flex justify-between items-center pr-5 fixed top-0 w-full transition-all duration-500">
-      <Cee />
+    <div className="dark:bg-dark-background bg-background flex justify-between items-center pr-5 fixed top-0 w-full transition-all duration-500">
+      {/* <Cee /> */}
 
       <div className="gap-4 items-center hidden md:flex">
         <nav>
