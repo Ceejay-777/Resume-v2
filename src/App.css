@@ -32,15 +32,11 @@
 }
 
 :root {
-  --lg-bg-color: rgba(255, 255, 255, 0.25);
-  --lg-highlight: rgba(255, 255, 255, 0.75);
-  --lg-text: #ffffff;
-  --lg-hover-glow: rgba(255, 255, 255, 0.4);
-  --lg-red: #fb4268;
-  --lg-grey: #5b5b5b;
+  --lg-bg-color: rgba(255, 255, 255, 0.114);
+  --lg-highlight: rgba(255, 255, 255, 0.73);
+  --lg-hover-glow: rgba(255, 255, 255, 0.2);
 }
 
-/* ========== CONTAINER ========== */
 .container {
   display: flex;
   flex-direction: column;
@@ -52,15 +48,12 @@
   flex-direction: row;
 }
 
-/* ========== GLASS CONTAINER ========== */
 .glass-container {
   position: relative;
   display: flex;
-  font-weight: 600;
-  color: var(--lg-text);
   cursor: pointer;
   background: transparent;
-  border-radius: 2rem;
+  border-radius: 100%;
   overflow: hidden;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
@@ -68,16 +61,10 @@
   height: 200px;
 }
 
-.glass-container--large {
-  min-width: 32rem;
-}
-
-/* ========== GLASS LAYERS ========== */
 .glass-filter {
   position: absolute;
   inset: 0;
-  z-index: ;
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(1px);
   filter: url(#lg-dist);
   isolation: isolate;
 }
@@ -93,9 +80,9 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-  border-radius: inherit;
+  border-radius: 100%;
   overflow: hidden;
-  box-shadow: inset 1px 1px 0 var(--lg-highlight),
-    inset 0 0 5px var(--lg-highlight);
+  box-shadow: inset 0px 0.5px 0 var(--lg-highlight),
+    inset 0 0 3px var(--lg-highlight);
 }
 

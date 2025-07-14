@@ -13,20 +13,20 @@ const Theme = () => {
 
   return (
     <div
-      className={`w-12 h-6 rounded-full flex items-center p-1 relative justify-between bg-dark-primary dark:bg-dark-complementary`}
+      className={`w-16 h-8 rounded-full flex items-center p-1 relative justify-between bg-dark-primary dark:bg-dark-complementary mx-8`}
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
         localStorage.setItem("theme", theme === "dark" ? "light" : "dark");
       }}
     >
-      <MoonIcon fill="#3162C4" strokeWidth={0} size={14} />
+      <MoonIcon fill="#3162C4" strokeWidth={0} size={16} />
       <motion.div
-        className={`w-4 h-4 rounded-full absolute bg-complementary dark:translate-x-6 dark:bg-dark-primary`}
+        className={`w-6 h-6 rounded-full absolute bg-complementary dark:translate-x-8 dark:bg-dark-primary`}
         layout
         transition={spring}
       />
 
-      <SunIcon fill="#B8B5BE" color="#B8B5BE" size={14} />
+      <SunIcon fill="#B8B5BE" color="#B8B5BE" size={16} />
     </div>
   );
 };
