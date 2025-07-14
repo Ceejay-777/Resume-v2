@@ -28,7 +28,7 @@ const Sidebar = ({ setSidebarOpen, sidebarOpen }) => {
 
   return (
     <div
-      className={`left-[0] bg-white dark:bg-pri w-52 h-screen transition-all duration-500 p-8 fixed top-[0] ${
+      className={`left-[0] bg-white dark:bg-pri w-52 h-screen transition-all duration-500 p-8 fixed top-[0] md:hidden ${
         sidebarOpen && "translate-x-[0]"
       } -translate-x-full`}
     >

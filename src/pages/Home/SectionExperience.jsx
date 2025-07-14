@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { experiences } from "../../data";
 import arrow from "../../assets/Icons/down.svg";
-import Header from "../../components/Header";
+import Header from "../../components/Title";
 
 export const SectionExperience = () => {
   const [currentExp, setCurrentExp] = useState("BrainBench");
@@ -18,7 +18,7 @@ export const SectionExperience = () => {
     <section className="dark:bg-pri py-12 px-4 md:px-8">
       <Header>Work Experience</Header>
 
-      {experiences.map((experience,) => {
+      {experiences.map((experience) => {
         const { title, company, date, duties } = experience;
         return (
           <fieldset

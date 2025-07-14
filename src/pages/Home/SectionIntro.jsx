@@ -1,12 +1,12 @@
-import Header from "../../components/Header.jsx";
+import Header from "../../components/Title.jsx";
 import Socials from "../../components/ui/Socials.jsx";
 
 const SectionIntro = () => {
   return (
-    <section className=" bg-background px-8 py-10 dark:bg-dark-background transition-all duration-500">
+    <section className=" bg-background px-8 py-10 dark:bg-dark-background transition-all duration-500 min-w-screen">
       <div className="max-w-[1200px] mx-auto">
         <Header>Me</Header>
-        <div className="md:flex md:flex-row-reverse md:gap-[10%] md:items-center md:p-8 ">
+        <div className="md:flex md:flex-row-reverse md:gap-[10%] md:items-center md:p-8">
           <div className="w-4/5 aspect-square max-w-[350px] my-5 mx-auto rounded-full bg-[url('./assets/CeejayImage2.jpg')] bg-cover border-12 md:image-shadow shadow-lg dark:shadow-black dark:border-pri-fade min-w-[280px]"></div>
           <div className="max-w-[580px] mx-auto">
             <p className="text-gray-400">Frontend Developer</p>

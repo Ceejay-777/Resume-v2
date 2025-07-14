@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+import Header from "../../components/Title";
 import { MyProjects } from "../../components/AllProjects";
 
 const SectionProjects = () => {
@@ -12,5 +12,4 @@ const SectionProjects = () => {
   );
 };
 
-export default SectionProjects
-
+export default SectionProjects;

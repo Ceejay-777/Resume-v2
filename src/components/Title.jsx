@@ -1,7 +1,7 @@
 import React from "react";
 import Underline from "./ui/Underline";
 
-const Header = ({ children }) => {
+const Title = ({ children }) => {
   return (
     <div>
       <h1 className="text-center dark:text-white font-semibold text-lg">
@@ -12,4 +12,4 @@ const Header = ({ children }) => {
   );
 };
 
-export default Header;
+export default Title;

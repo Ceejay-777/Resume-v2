@@ -1,49 +1,30 @@
-import React, { useState } from "react";
-import Cee from "../../assets/Cee.jsx";
-import Sidebar from "./Sidebar.jsx";
-import Hamburger from "../../assets/Icons/Hamburger.jsx";
-import Theme from "../ui/ThemeSwitch.jsx";
+import React from "react";
 import { Link } from "react-router-dom";
-import Download from "../ui/Download.jsx";
 
 const Navbar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
   return (
-    <div className="dark:bg-dark-background bg-background flex justify-between items-center pr-5 fixed top-0 w-full transition-all duration-500">
-      {/* <Cee /> */}
-
-      <div className="gap-4 items-center hidden md:flex">
-        <nav>
-          <ul className="flex rounded-3xl px-4 py-3 gap-6">
-            <Link
-              to="/"
-              className="hover:underline transition-all text-com md:border-0 md:p-0"
-            >
-              Home
-            </Link>
-            <Link
-              to="projects"
-              className="hover:underline transition-all text-com md:border-0 md:p-0"
-            >
-              Projects
-            </Link>
-            <Link
-              to="contact"
-              className="hover:underline transition-all text-com md:border-0 md:p-0"
-            >
-              Contact
-            </Link>
-          </ul>
-        </nav>
-        <Theme />
-        <Download />
-      </div>
-
-      <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
-      <Sidebar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
-    </div>
+    <nav>
+      <ul className="flex rounded-3xl px-4 py-3 gap-6 justify-between uppercase font-heading text-accent dark:text-dark-accent lg:text-2xl lg:gap-8">
+        <Link
+          to="/home"
+          className=" hover:-translate-y-1 transition-all text-com md:border-0 md:p-0"
+        >
+          Home
+        </Link>
+        <Link
+          to="projects"
+          className=" transition-all text-com md:border-0 md:p-0 hover:-translate-y-1"
+        >
+          Projects
+        </Link>
+        <Link
+          to="contact"
+          className=" transition-all text-com md:border-0 md:p-0 hover:-translate-y-1"
+        >
+          Contact
+        </Link>
+      </ul>
+    </nav>
   );
 };
 
