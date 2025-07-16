@@ -1,15 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router";
-import Navbar from "../components/navigation/Navbar";
+import Header from "../components/navigation/Header";
 import Footer from "../components/navigation/Footer";
+import PageAnimateWrapper from "./PageAnimateWrapper";
 
 const MainSharedLayout = () => {
   return (
-    <div className="shared relative">
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </div>
+    <PageAnimateWrapper>
+      <div className="shared relative">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </PageAnimateWrapper>
   );
 };
 

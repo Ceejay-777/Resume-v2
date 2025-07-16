@@ -3,14 +3,6 @@ import React from "react";
 const GlassDisk = () => {
   return (
     <div>
-      <div className="container container--inline">
-        <div className="glass-container glass-container--rounded glass-container--large">
-          <div className="glass-filter"></div>
-          <div className="glass-overlay"></div>
-          <div className="glass-specular"></div>
-        </div>
-      </div>
-
       <div className="container">
         <div className="glass-container">
           <div className="glass-filter"></div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { skills } from "../../data";
-import Header from "../../components/Header";
+import Header from "../../components/Title";
 
 export const SectionSkillset = () => {
   return (

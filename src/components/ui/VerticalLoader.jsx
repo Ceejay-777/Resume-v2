@@ -9,7 +9,7 @@ const VerticalLoader = () => {
     const animateProgress = () => {
       setProgress((prev) => {
         if (prev >= 100) return 100;
-        return prev + 1;
+        return prev + 0.4;
       });
 
       if (progress < 100) {
@@ -23,15 +23,15 @@ const VerticalLoader = () => {
   }, [progress]);
 
   return (
-    <div className="absolute right-0 bottom-0 h-screen z-50 flex items-end justify-center gap-2">
+    <div className="max-h-screen absolute right-0 top-0 h-screen z-50 flex items-end justify-center gap-2 ">
       <div
-        className="text-7xl font-bold text-accent dark:text-dark-accent font-body italic"
+        className="top-0 text-7xl font-bold text-accent dark:text-dark-accent font-body italic "
         style={{
           height: `${progress}%`,
           animationTimingFunction: "ease-in-out",
         }}
       >
-        {progress}%
+        {Math.round(progress)}%
       </div>
       <div
         key="loader"

@@ -1,6 +1,6 @@
 import React from "react";
 import { MyProjects } from "../components/AllProjects";
-import Header from "../components/Header";
+import Header from "../components/Title";
 
 const Projects = () => {
   return (
