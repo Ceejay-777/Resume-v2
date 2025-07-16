@@ -9,7 +9,7 @@ const VerticalLoader = () => {
     const animateProgress = () => {
       setProgress((prev) => {
         if (prev >= 100) return 100;
-        return prev + 0.4;
+        return prev + 0.75;
       });
 
       if (progress < 100) {

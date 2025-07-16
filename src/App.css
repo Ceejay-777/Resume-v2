@@ -19,6 +19,20 @@
   --color-secondary: #9ab6d8;
   --color-accent: #1f2a38;
   --color-complementary: #b8b5be;
+
+  --breakpoint-mlg: 56rem;
+  --breakpoint-lgd: 77rem;
+
+  --animate-infinite-scroll: infinite-scroll 10s linear infinite 
+
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    } 
+    100% {
+      transform: translateX(calc(50% - 20px));
+    } 
+  }
 }
 
 @layer base {
@@ -86,4 +100,3 @@
   box-shadow: inset 0px 0.5px 0 var(--lg-highlight),
     inset 0 0 3px var(--lg-highlight);
 }
-

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SectionAbout = () => {
   return (
-    <section className="bg-gray-100 dark:bg-pri-fade transition-all duration-500">
+    <section className="bg-background dark:bg-dark-background transition-all duration-500">
       <div className="max-w-[1400px] py-12 mx-auto">
         <Header>About</Header>
         <div className="mt-12 px-8 md:px-16">

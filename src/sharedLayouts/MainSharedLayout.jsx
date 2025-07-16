@@ -7,10 +7,10 @@ import PageAnimateWrapper from "./PageAnimateWrapper";
 const MainSharedLayout = () => {
   return (
     <PageAnimateWrapper>
-      <div className="shared relative">
+      <div className="">
         <Header />
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </PageAnimateWrapper>
   );

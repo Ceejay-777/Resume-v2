@@ -1,35 +1,25 @@
 import React from "react";
 import { socialLinks } from "../../data";
+import SocialIcon from "./SocialIcon";
 
 const Socials = () => {
   return (
-    <div className="gap-4 mt-8 max-w-[480px] w-fit items-center">
+    <div className="mt-8 max-w-[480px] w-fit items-center">
       {socialLinks.map((linkTypes, index) => {
         const { fullLinks, iconLinks } = linkTypes;
 
         return (
           <div key={index}>
-            <div className="mb-2">
+            <div className="mb-2 mlg:mb-4">
               {fullLinks.map((socialLink, index) => {
                 const { icon, ref, account, text } = socialLink;
                 return (
-                  <div className="flex gap-6 items-center mb-2" key={index}>
-                    <div
-                      key={index}
-                      className="p-2 dark:bg-white bg-gray-200 rounded-full hover:scale-110 w-fit"
-                    >
-                      <a href={ref} target="_blank">
-                        <img
-                          src={icon}
-                          alt={`${account} icon`}
-                          className="w-6 mb:w-8"
-                        />
-                      </a>
-                    </div>
+                  <div className="flex gap-6 items-center mb-2 mlg:mb-4" key={index}>
+                    <SocialIcon icon={icon} href={ref} account={account} />
                     <a
                       href={ref}
                       target="_blank"
-                      className="text-sec hover:underline text-sm md:text-md"
+                      className="hover:underline text-sm mlg:text-lg"
                     >
                       {text}
                     </a>
@@ -41,18 +31,7 @@ const Socials = () => {
               {iconLinks.map((socialLink, index) => {
                 const { icon, ref, account } = socialLink;
                 return (
-                  <div
-                    key={index}
-                    className="p-2 dark:bg-white bg-gray-200 rounded-full hover:scale-110 w-fit"
-                  >
-                    <a href={ref} target="_blank">
-                      <img
-                        src={icon}
-                        alt={`${account} icon`}
-                        className="w-6 mb:w-8"
-                      />
-                    </a>
-                  </div>
+                  <SocialIcon icon={icon} href={ref} account={account} key={index}/>
                 );
               })}
             </div>

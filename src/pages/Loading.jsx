@@ -20,7 +20,7 @@ const Loading = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/home");
-    }, 6000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
@@ -33,11 +33,11 @@ const Loading = () => {
     <PageAnimateWrapper disableInitial>
       <section className="w-screen h-screen bg-complementary dark:bg-dark-background relative p-8">
         <Matrix />
-        <div className="flex gap-6 items-center ">
+        <div className="hidden md:flex gap-2 md:gap-6 items-center ">
           <img
             src={bgImage}
             alt="CeeJay"
-            className="relative w-30 rounded-3xl"
+            className="relative w-16 md:w-30 rounded-xl md:rounded-3xl"
           />
           <Theme />
         </div>

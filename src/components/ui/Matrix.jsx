@@ -9,7 +9,7 @@ const Matrix = () => {
   const { theme } = useAppContext();
   const bgOpac =
     theme === "dark" ? "rgba(10, 13, 18, 0.05)" : "rgba(213, 212, 217, 0.05)";
-  const bg = theme === "dark" ? "rgb(10, 13, 18)" : "rgb(245, 248, 250)";
+  const text = theme === "dark" ? "	#a3b8d1" : "#1f2a38";
 
   const latin =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz";
@@ -40,7 +40,7 @@ const Matrix = () => {
     context.fillStyle = bgOpac;
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = "#00F";
+    context.fillStyle = text;
     context.font = `${fontSize}px monospace`;
 
     for (let i = 0; i < drops.length; i++) {
