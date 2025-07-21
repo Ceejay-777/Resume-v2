@@ -1,0 +1,13 @@
+export { default as Django } from "./Django";
+export { default as Figma } from "./Figma";
+export { default as Flask } from "./Flask";
+export { default as Github } from "./Github";
+export { default as Javascript } from "./Javascript";
+export { default as Mongodb } from "./Mongodb";
+export { default as Motion } from "./Motion";
+export { default as Next } from "./Next";
+export { default as Postgresql } from "./Postgresql";
+export { default as Python } from "./Python";
+export { default as React } from "./React";
+export { default as Tailwind } from "./Tailwind";
+export { default as Typescript } from "./Typescript";

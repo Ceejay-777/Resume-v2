@@ -3,18 +3,6 @@ import gmail from "./assets/Icons/mail.svg";
 import Xlogo from "./assets/Icons/Xlogo.svg";
 import linkedin from "./assets/Icons/linkedin.svg";
 import phone from "./assets/Icons/phone.svg";
-import javascript from "./assets/Icons/javascript.svg";
-import html from "./assets/Icons/html.svg";
-import css from "./assets/Icons/css.svg";
-import react from "./assets/Icons/react.svg";
-import nodejs from "./assets/Icons/nodejs.svg";
-import nextjs from "./assets/Icons/nextjs.svg";
-import figma from "./assets/Icons/figma.svg";
-import flask from "./assets/Icons/flask.svg";
-import git from "./assets/Icons/git.svg";
-import python from "./assets/Icons/python.svg";
-import bootstrap from "./assets/Icons/bootstrap.svg";
-import tailwindCSS from "./assets/Icons/tailwindCSS.svg";
 import cardDetails from "./assets/Project_images/carddetails_mockup.png";
 import horizon from "./assets/Project_images/horizon_mockup.png";
 import faqAccordion from "./assets/Project_images/faq_mockup.png";
@@ -26,6 +14,21 @@ import pipeline from "./assets/Project_images/pipeline_mockup.png";
 import portfolio from "./assets/Project_images/portfolio_mockup.png";
 import rufus from "./assets/Project_images/rufus_mockup.png";
 import rps from "./assets/Project_images/RPS_mockup.png";
+
+import {
+  Next,
+  Javascript,
+  Django,
+  Typescript,
+  Flask,
+  Tailwind,
+  Python,
+  Mongodb,
+  Motion,
+  Postgresql,
+  Figma,
+  React,
+} from "../src/components/Icons/index";
 
 export const projects = [
   {
@@ -192,18 +195,18 @@ export const experiences = [
 ];
 
 export const skills = [
-  { icon: nextjs, name: "NextJS" },
-  { icon: react, name: "React" },
-  { icon: html, name: "HTML" },
-  { icon: css, name: "CSS" },
-  { icon: javascript, name: "Javascript" },
-  { icon: nodejs, name: "NodeJS" },
-  { icon: tailwindCSS, name: "Tailwindcss" },
-  { icon: bootstrap, name: "Bootstrap" },
-  { icon: python, name: "Python" },
-  { icon: figma, name: "Figma" },
-  { icon: flask, name: "Flask" },
-  { icon: git, name: "Git" },
+  { Icon: Next, label: "NextJS" },
+  { Icon: Typescript, label: "Typescript" },
+  { Icon: Django, label: "Django" },
+  { Icon: Tailwind, label: "Tailwind" },
+  { Icon: React, label: "React" },
+  { Icon: Javascript, label: "Javascript" },
+  { Icon: Mongodb, label: "Mongodb" },
+  { Icon: Postgresql, label: "Postgresql" },
+  { Icon: Python, label: "Python" },
+  { Icon: Figma, label: "Figma" },
+  { Icon: Flask, label: "Flask" },
+  { Icon: Motion, label: "Motion" },
 ];
 
 export const slideUpVariant = {
