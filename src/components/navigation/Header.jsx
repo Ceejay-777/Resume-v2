@@ -23,11 +23,13 @@ const Header = () => {
         <img src={bgImage} alt="CeeJay" className="relative w-16 rounded-2xl" />
         <Theme />
       </div>
-      <Navbar />
-      <Download />
-      <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      <div className="flex items-center">
+        <Navbar />
+        <Download />
+      </div>
+      {/* <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
 
-      <Sidebar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
+      {/* <Sidebar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} /> */}
     </div>
   );
 };

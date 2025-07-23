@@ -1,59 +1,60 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Skillbar from "./Skillbar.jsx";
+import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 
 const Project = ({ project }) => {
+  const childRef = useRef();
   const [showAll, setShowAll] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [childHeight, setChildHeight] = useState(0);
+
   const { name, image, info, skills, link } = project;
-  const show = (
-    <span
-      className="text-sec hover:cursor-pointer"
-      onClick={() => setShowAll(!showAll)}
-    >
-      {showAll ? "Show less" : " ...show more"}
-    </span>
-  );
+
+  useEffect(() => {
+    if (childRef.current) {
+      setChildHeight(childRef.current.offsetHeight);
+    }
+  }, []);
+
+  // Optional: update height if content changes
+  useEffect(() => {
+    if (childRef.current) {
+      setChildHeight(childRef.current.offsetHeight);
+    }
+  }, [showAll, name, info, skills, link]);
+
+  const parentHeight = hovered ? childHeight + 64 : 188; // 320 = default h-80
 
   return (
-    <div
-      className={`my-10 mx-6 bg-gray-200 dark:bg-pri rounded-xl shadow-md md:flex items-center`}
+    <motion.div
+      className="my-10 shadow-md border flex flex-col mx-auto group z-30 relative overflow-hidden w-80"
+      layout
+      style={{ height: parentHeight }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      transition={{ duration: 0.2 }}
     >
-      <div className="p-4 md:w-1/2">
-        <a href={link} target="_blank">
-          <img
-            src={image}
-            alt="Project"
-            className="h-auto hover:scale-105 transition-all max-h-[350px] mx-auto"
-          />
-        </a>
+      <div className="mx-auto transition-all duration-700 bg-black  group-hover:-translate-y-4/5 z-20 flex items-center">
+        <img src={image} alt="Project" className="" />
       </div>
 
-      <div className="bg-white dark:bg-pri-fader p-4 dark:text-white md:w-1/2 self-stretch md:flex justify-center flex-col md:rounded-r-xl rounded-b-xl">
-        <h2 className="text-xl font-semibold mb-6 ">{name}</h2>
-        <p className="font-light text-sm">
-          {info.length >= 120 && showAll ? info : info.substring(0, 150)} {show}
-        </p>
+      <div
+        className="p-4 dark:text-white justify-center flex-col absolute top-0 transition-all duration-700 group-hover:translate-y-12 z-10"
+        ref={childRef}
+      >
+        <h2 className="text-xl font-semibold mb-6">{name}</h2>
+        <p className="font-light text-xs ">{info.length > 150 ? info.substring(0, 120) + "..." : info} </p>
+        {info.length > 150 && <span>show more</span>}
         <Skillbar skills={skills} />
 
         <div className="ml-4 w-fit">
-          <a href={link} target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="w-6 h-6 text-sec hover:scale-110"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-              />
-            </svg>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <Link />
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

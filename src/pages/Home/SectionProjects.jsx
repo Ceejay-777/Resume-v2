@@ -1,13 +1,15 @@
 import Header from "../../components/Title";
 import { MyProjects } from "../../components/AllProjects";
+import Project from "../../components/Project";
+import { projects } from "../../data";
+
+const projectOne = projects[0]
 
 const SectionProjects = () => {
   return (
-    <section className="bg-gray-100 dark:bg-pri-fade py-12 transition-all duration-500">
-      <div className="max-w-[1200px] mx-auto">
-        <Header>Projects</Header>
-        <MyProjects main={false} num={2} />
-      </div>
+    <section className="bg-background dark:bg-dark-background transition-all duration-500 h-screen">
+        {/* <MyProjects main={false} num={2} /> */}
+        <Project  project={projectOne}/>
     </section>
   );
 };

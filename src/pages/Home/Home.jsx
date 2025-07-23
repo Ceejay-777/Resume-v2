@@ -6,11 +6,11 @@ import SectionAbout from "./SectionAbout";
 
 const Home = () => {
   return (
-    <main className="main">
+    <main className="w-screen">
       <SectionIntro />
       {/* <SectionAbout /> */}
       <SectionSkillset />
-      {/* <SectionProjects /> */}
+      <SectionProjects />
       {/* <SectionExperience /> */}
     </main>
   );

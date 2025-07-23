@@ -1,8 +1,4 @@
-import React from "react";
 import { skills } from "../../data";
-import Header from "../../components/Title";
-import Marquee from "react-fast-marquee";
-import {Next} from "../../components/Icons/index";
 
 export const SectionSkillset = () => {
   return (
@@ -19,8 +15,8 @@ export const SectionSkillset = () => {
 const Skill = ({ Icon, label }) => {
   return (
     <div className="bg-background dark:bg-dark-background flex items-center justify-center p-2 rounded-xl flex-wrap gap-2">
-      <Icon className="text-secondary dark:text-dark-secondary w-6 h-6 mlg:w-8 mlg:h-8" />
-      <p className="text-accent dark:text-dark-accent text-sm font-semibold">
+      <Icon className="text-primary dark:text-dark-secondary w-6 h-6 mlg:w-8 mlg:h-8 " />
+      <p className="text-accent dark:text-dark-accent text-sm font-semibold mlg:text-base">
         {label}
       </p>
     </div>
