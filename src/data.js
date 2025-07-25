@@ -74,7 +74,7 @@ export const projects = [
     image: portfolio,
     info: "A dynamic developer portfolio with theme toggles, animations, and smooth transitions showcasing projects, skills, and personal highlights in a performant, responsive layout.",
     skills: ["React", "Tailwind", "Framer Motion", "TypeScript"],
-    link: "https://dacodefadav2.vercel.app",
+    link: "https://ceejaydacodefadav2.vercel.app",
   },
 
   {
