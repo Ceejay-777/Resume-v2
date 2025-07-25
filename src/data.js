@@ -35,7 +35,7 @@ export const projects = [
     id: 1,
     name: "My portfolio",
     image: portfolio,
-    info: "A clean and modern personal portfolio showcasing my skills, projects, and experience, built using React and styled with responsive design to provide a seamless user experience across devices. f9 7gf138ft8tftft3fttftftff tftfttftf f3tf tft3tf fttftf4t f4tft4f t4tf4 44tf 4tft f4 fufgwtfyf8 yf yfy09f9w yf0eyf0 yf0yfye0f yefy80eyf0w8yf08 eyf08 fey 08fye08fye f8ye08fye90 fy0eyf0eyf09e yf90eyf ewy0fy ew0fye0yf0e fe90yf0ey e80yf f0y e fye9yf09eywf09ye09f y0e yf09weyf9ye 0fy ew0fy ew08fy8e0 yf08eyf0eyf08ey",
+    info: "A clean and modern personal portfolio showcasing my skills, projects, and experience, built using React and styled with responsive design to provide a seamless user experience across devices.",
     skills: ["ReactJS", "Tailwind", "CSS", "Git"],
     link: "https://resume-ceejay777.vercel.app",
   },
