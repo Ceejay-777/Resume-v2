@@ -5,9 +5,9 @@ import { projects } from "../../data";
 
 const SectionProjects = () => {
   return (
-    <section className="bg-background dark:bg-dark-background transition-all duration-500 h-screen">
-        {/* <MyProjects main={false} num={2} /> */}
-        <MyProjects />
+    <section className="bg-background dark:bg-dark-background transition-all duration-500">
+      <Header>Projects</Header>
+      <MyProjects />
     </section>
   );
 };

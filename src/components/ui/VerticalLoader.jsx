@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
-const VerticalLoader = () => {
-  const [progress, setProgress] = useState(0);
-
+const VerticalLoader = ({progress, setProgress}) => {
   useEffect(() => {
     let frame;
 

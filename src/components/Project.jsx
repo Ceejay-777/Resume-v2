@@ -7,9 +7,11 @@ const Project = ({ project }) => {
   const { name, image, info, skills, link } = project;
 
   return (
-    <div className="px-12 flex flex-col md:flex-row gap-6 items-center max-w-[1440px] mx-auto">
-      <div className="md:w-[55%] rounded-xl border border-complementary/20 h-fit min-w- project relative overflow-hidden">
-        <img src={image} alt="Project" className="" />
+    <div className="px-12 flex flex-col md:flex-row gap-6 items-center max-w-[1440px] mx-auto justify-around">
+      <div className="md:w-[55%] rounded-xl border border-complementary/20 h-fit max-w-[600px] project relative overflow-hidden shadow-sm">
+        <a href={link} target="_blank">
+          <img src={image} alt="Project" />
+        </a>
       </div>
 
       <ProjectInfo name={name} info={info} skills={skills} link={link} />

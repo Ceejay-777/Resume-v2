@@ -4,14 +4,14 @@ import Header from "../components/Title";
 
 const Projects = () => {
   return (
-    <main className="main dark:bg-pri-fader transition-all duration-500">
+    <main className="main dark:bg-pri-fader transition-all duration-500 pt-26">
       <Header>Projects</Header>
-      <MyProjects main={true} />
-      <p className="text-center mb-10 dark:text-white">
+      <MyProjects />
+      <p className="text-center mb-10 text-accent dark:text-dark-accent m-6 text-sm">
         Checkout all my frontendmentor projects at{" "}
         <a
           href="https://www.frontendmentor.io/profile/Ceejay-777"
-          className="accent"
+          className="text-complementary cursor-pointer hover:underline"
           target="_blank"
         >
           Frontend Mentor

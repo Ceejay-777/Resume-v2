@@ -2,16 +2,14 @@ import SectionIntro from "./SectionIntro";
 import { SectionExperience } from "./SectionExperience";
 import { SectionSkillset } from "./SectionSkillset";
 import SectionProjects from "./SectionProjects";
-import SectionAbout from "./SectionAbout";
 
 const Home = () => {
   return (
-    <main className="w-screen">
+    <main className="max-w-screen flex flex-col gap-12">
       <SectionIntro />
-      {/* <SectionAbout /> */}
       <SectionSkillset />
       <SectionProjects />
-      {/* <SectionExperience /> */}
+      <SectionExperience />
     </main>
   );
 };

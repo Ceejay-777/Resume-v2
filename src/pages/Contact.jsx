@@ -5,18 +5,8 @@ import Socials from "../components/ui/Socials.jsx";
 import Header from "../components/Title.jsx";
 
 const Contact = () => {
-  const [fname, setFname] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const messageInput = useRef(null);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(fname, email, message);
-  };
-
   return (
-    <div className="main dark:bg-pri transition-all duration-500">
+    <div className="main dark:bg-pri transition-all duration-500 py-24">
       <Header>Contact Me</Header>
       <div className="mx-auto w-fit mt-8">
         <Socials />

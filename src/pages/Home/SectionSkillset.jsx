@@ -1,9 +1,11 @@
 import { skills } from "../../data";
+import Header from "../../components/Title";
 
 export const SectionSkillset = () => {
   return (
-    <section className="p-12">
-      <div className="bg-secondary dark:bg-dark-secondary rounded-xl mx-auto p-3 grid grid-cols-3 w-fit justify-center gap-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+    <section className="p-6">
+      <Header>Skill Set</Header>
+      <div className="bg-secondary dark:bg-dark-secondary rounded-xl mx-auto p-3 grid grid-cols-3 w-fit justify-center gap-2 sm:grid-cols-4  lg:grid-cols-6">
         {skills.map((skill) => {
           return <Skill Icon={skill.Icon} label={skill.label} />;
         })}

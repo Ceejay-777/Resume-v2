@@ -14,16 +14,23 @@ import PageAnimateWrapper from "../sharedLayouts/PageAnimateWrapper";
 const Loading = () => {
   const { theme } = useAppContext();
   const [bgImage, setBgImage] = useState(theme === "dark" ? ceewhite : ceedark);
+  const [progress, setProgress] = useState(0);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("/home");
-    }, 3000);
+    // const timer = setTimeout(() => {
 
-    return () => clearTimeout(timer);
-  }, [navigate]);
+    // }, 3000);
+
+    console.log(progress)
+
+    if (progress >= 100) {
+      navigate("/home");
+    }
+
+    // return () => clearTimeout(timer);
+  }, [navigate, progress]);
 
   useEffect(() => {
     setBgImage(theme === "dark" ? ceewhite : ceedark);
@@ -41,7 +48,7 @@ const Loading = () => {
           />
           <Theme />
         </div>
-        <VerticalLoader />
+        <VerticalLoader progress={progress} setProgress={setProgress} />
         {/* <GlassDisk /> */}
       </section>
     </PageAnimateWrapper>

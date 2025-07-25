@@ -13,7 +13,7 @@ const Theme = () => {
 
   return (
     <div
-      className={`w-16 h-8 rounded-full flex items-center p-1 relative justify-between bg-dark-primary dark:bg-dark-complementary mx-8`}
+      className={`w-16 h-8 rounded-full flex items-center p-1 relative justify-between bg-dark-primary dark:bg-dark-complementary mlg:mx-8 `}
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
         localStorage.setItem("theme", theme === "dark" ? "light" : "dark");
