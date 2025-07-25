@@ -1,14 +1,15 @@
-import React from 'react'
+import Logo from "./Logo";
 const Footer = () => {
   return (
-    <footer className='w-full dark:bg-pri-fade bg-gray-100 h-20 flex justify-center'>
+    <footer className="w-full dark:bg-background bg-dark-background h-20 flex justify-center">
       <div className="w-full max-w-[450px] flex justify-around items-center">
-        <div className='dark:text-gray-300 text-gray-900'>
+        <Logo />
+        <div className="dark:text-accent text-dark-accent">
           <p>&copy; 2025 CeeJay All rights reserved</p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

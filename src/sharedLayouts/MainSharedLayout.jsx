@@ -22,7 +22,7 @@ const MainSharedLayout = () => {
         <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         <Sidebar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
         <Outlet />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </PageAnimateWrapper>
   );

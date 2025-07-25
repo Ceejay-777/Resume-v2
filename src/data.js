@@ -119,30 +119,32 @@ export const socialLinks = [
 
 export const experiences = [
   {
-    nameTag: "SSRL",
-    title: "Frontend Web developer, Intern",
+    title: "Backend Team Lead",
+    company: "DocuHealth Services",
+    date: "Dec 2024 - Present",
+    duty: "At DocuHealth, I lead backend development for a hospital record platform adopted by over 500 users and the Osun State Government. I designed and implemented secure Django APIs for managing hospital and patient data, built JWT-based authentication with role-based access, and integrated MongoDB for optimized data retrieval. I also handled Paystack subscriptions and Cloudinary asset management, collaborating closely with frontend engineers to ensure seamless integration.",
+  },
+
+  {
+    title: "Fullstack Developer",
+    company: "Fowgate Corporation",
+    date: "Feb 2024 - Present",
+    duty: "I'm building a modular ERP system used by multiple Nigerian enterprises. I architected reusable database logic via a shared BaseDB class and designed flexible MongoDB schemas to support nested accounts, subscriptions, and notifications. I also integrated AI-driven document intelligence using RAG and designed Swagger-documented REST APIs for smooth collaboration with frontend teams.",
+  },
+
+  {
+    title: "Software Lead (Intern)",
     company: "Smart Systems Research Lab",
-    location: "FUTA, Akure",
-    date: "April 2024 - Present",
-    duty: "Constantly worked on improving existing skills and add additional skills. Collaborated with other lab interns to develop various lab projects. Developed good rapport with other interns and members of my team. Participated in various lab organized events such as hackatons and ideatons.",
-  },
-
-  {
-    nameTag: "Kinplus",
-    title: "Frontend Web developer, Intern",
-    company: "Kinplus Technologies ",
     location: "Ado-Ekiti, Ekiti State",
-    date: "April 2023 - August 2023",
-    duty: "Understand the basics of HTML, CSS and JavaScript. Developed responsive and intuitive user interfaces using HTML, CSS, and JavaScript, integrating seamlessly with RESTful APIs to enhance website functionality and user experience.  Quickly adapted to new tech, showing proactive skill development while maintaining clean frontend code, focusing on detail and readability. Utilized modern frontend frameworks such as React.js to build dynamic and interactive user interfaces, expanding proficiency in frontend development technologies.",
+    date: "Apr 2023 - Present",
+    duty: "As part of an agile research team, I led the design and development of an internal intern management system for the lab. I built reusable React components, implemented local routing for a seamless UX, and wrote backend APIs using Flask for user and report workflows. I managed Git-based version control and coordinated sprint planning with other team leads.",
   },
-
   {
-    nameTag: "BrainBench",
-    title: "Junior Backend Developer(ML), Intern",
-    company: "Brainbench Academy",
+    title: "Frontend Developer (Intern)",
+    company: "Kinplus Technologies",
     location: "Ado-Ekiti, Ekiti State",
-    date: "April 2022 - September 2022",
-    duty: "Understand the basics of machine learning algorithms and models. This involves understanding how different algorithms work, what their strengths and weaknesses are, and how to choose the right algorithm for a particular problem. Help develop simple APIs using python. Train, test, and validate simple machine learning models. This includes using cross-validation to evaluate model performance, tuning parameters, and evaluating the impact of different features on model performance. Write code that is clean, well-documented, and easy to maintain.",
+    date: "Apr 2023 - April 2024",
+    duty: "At Kinplus, I developed production-ready frontend components with a focus on responsiveness and accessibility. I collaborated with backend engineers to integrate RESTful APIs, debugged JavaScript logic and layout issues, and helped streamline frontend delivery workflows. The experience gave me hands-on exposure to agile processes, team velocity, and real-world client delivery standards.",
   },
 ];
 
