@@ -34,7 +34,7 @@ export const projects = [
     image: docuhealth,
     info: "A secure hospital records API with patient onboarding, file uploads, and subscription management. Powers a real health platform adopted by over 500 users and the Osun State Government.",
     skills: ["Django", "PostgreSQL", "JWT", "Paystack", "Cloudinary"],
-    link: "https://docuhealthservices.com",
+    link: "https://www.docuhealthservices.com",
   },
 
   {
@@ -44,7 +44,7 @@ export const projects = [
     image: learnexo,
     info: "An AI-powered learning platform for high school students in Nigeria, delivering personalized lessons and tracking progress through a fullstack dashboard and device sync.",
     skills: ["React", "Node", "TypeScript", "Flask", "MongoDB", "AI"],
-    link: "https://learnexo.vercel.app/",
+    link: "https://www.learnexo.vercel.app/",
   },
 
   {
@@ -54,7 +54,7 @@ export const projects = [
     image: ssrllabapp,
     info: "A personnel and intern management system built for Smart Systems Research Lab to streamline onboarding, report submission, and admin tracking.",
     skills: ["React", "Flask", "MongoDB", "Redux"],
-    link: "https://ssrl-lab-app.vercel.app",
+    link: "https://www.ssrl-lab-app.vercel.app",
   },
 
   {
@@ -64,7 +64,7 @@ export const projects = [
     image: gridale,
     info: "A fast-paced puzzle game where players click matching colors before time runs out. Includes score tracking, difficulty scaling, and saved high scores.",
     skills: ["Reac", "Tailwind", "Redux"],
-    link: "https://gridale.vercel.app",
+    link: "https://www.gridale.vercel.app",
   },
 
   {
@@ -74,7 +74,7 @@ export const projects = [
     image: portfolio,
     info: "A dynamic developer portfolio with theme toggles, animations, and smooth transitions showcasing projects, skills, and personal highlights in a performant, responsive layout.",
     skills: ["React", "Tailwind", "Framer Motion", "TypeScript"],
-    link: "https://ceejaydacodefadav2.vercel.app",
+    link: "https://www.ceejaydacodefadav2.vercel.app",
   },
 
   {
@@ -84,7 +84,7 @@ export const projects = [
     image: chainagents,
     info: "A sleek landing site for a crypto token project, featuring tokenomics, whitepaper, and animated sections to explain the ecosystem and build community trust.",
     skills: ["ReactJS", "Tailwind", "JavaScript", "Git", "Redux"],
-    link: "https://changeagents.vercel.app/",
+    link: "https://www.changeagents.vercel.app/",
   },
 ];
 
