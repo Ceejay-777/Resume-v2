@@ -19,17 +19,15 @@ const Loading = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // const timer = setTimeout(() => {
+    const timer = setTimeout(() => {}, 3000);
 
-    // }, 3000);
-
-    console.log(progress)
+    console.log(progress);
 
     if (progress >= 100) {
       navigate("/home");
     }
 
-    // return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, [navigate, progress]);
 
   useEffect(() => {
@@ -49,7 +47,7 @@ const Loading = () => {
           <Theme />
         </div>
         <VerticalLoader progress={progress} setProgress={setProgress} />
-        {/* <GlassDisk /> */}
+        <GlassDisk />
       </section>
     </PageAnimateWrapper>
   );

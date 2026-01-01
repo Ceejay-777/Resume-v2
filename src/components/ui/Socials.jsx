@@ -1,4 +1,3 @@
-import React from "react";
 import { socialLinks } from "../../data";
 import SocialIcon from "./SocialIcon";
 
@@ -14,7 +13,10 @@ const Socials = () => {
               {fullLinks.map((socialLink, index) => {
                 const { icon, ref, account, text } = socialLink;
                 return (
-                  <div className="flex gap-3 items-center mb-2 mlg:mb-4" key={index}>
+                  <div
+                    className="flex gap-3 items-center mb-2 mlg:mb-4"
+                    key={index}
+                  >
                     <SocialIcon icon={icon} href={ref} account={account} />
                     <a
                       href={ref}
@@ -31,7 +33,12 @@ const Socials = () => {
               {iconLinks.map((socialLink, index) => {
                 const { icon, ref, account } = socialLink;
                 return (
-                  <SocialIcon icon={icon} href={ref} account={account} key={index}/>
+                  <SocialIcon
+                    icon={icon}
+                    href={ref}
+                    account={account}
+                    key={index}
+                  />
                 );
               })}
             </div>

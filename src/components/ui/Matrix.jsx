@@ -71,7 +71,10 @@ const Matrix = () => {
   }, [theme]);
 
   return (
-    <canvas ref={canvasRef} className="absolute top-0 left-0 w-screen h-screen" />
+    <canvas
+      ref={canvasRef}
+      className="absolute top-0 left-0 w-screen h-screen"
+    />
   );
 };
 
