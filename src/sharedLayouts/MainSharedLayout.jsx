@@ -18,8 +18,8 @@ const MainSharedLayout = () => {
   return (
     <PageAnimateWrapper>
       <div className="">
-        <Header />
-        <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        {/* <Header /> */}
+        <Hamburger sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />ta
         <Sidebar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
         <Outlet />
         <Footer />

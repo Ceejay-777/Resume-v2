@@ -1,4 +1,4 @@
-// import Socials from "../../components/ui/Socials.jsx";
+import Socials from "../../components/ui/Socials.jsx";
 import ceeImage from "../../assets/Ceejay_portrait.png";
 
 const SectionIntro = () => {
@@ -19,7 +19,7 @@ const SectionIntro = () => {
           functional, and user-focused. I lead with curiosity, collaborate with
           intention, and ship work that solves real problems.
         </p>
-        {/* <Socials /> */}
+        <Socials />
       </div>
       <div className="w-[calc(60%_-_64px)] max-w-[860px] h-fit self-end hidden mlg:block absolute bottom-0 right-16 z-10">
         <img src={ceeImage} alt="CeeJay" className=" w-full" />

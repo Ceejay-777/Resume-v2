@@ -7,7 +7,8 @@ const VerticalLoader = ({progress, setProgress}) => {
     const animateProgress = () => {
       setProgress((prev) => {
         if (prev >= 100) return 100;
-        return prev + 0.75;
+        const increment = prev > 80 ? 0.35 : 0.5;
+        return prev + increment;
       });
 
       if (progress < 100) {
@@ -18,7 +19,7 @@ const VerticalLoader = ({progress, setProgress}) => {
     frame = requestAnimationFrame(animateProgress);
 
     return () => cancelAnimationFrame(frame);
-  }, [progress]);
+  }, []);
 
   return (
     <div className="max-h-screen absolute right-0 top-0 h-screen z-50 flex items-end justify-center gap-2 ">
