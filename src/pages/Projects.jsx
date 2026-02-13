@@ -5,11 +5,17 @@ import { projects } from "../data";
 
 const Projects = () => {
   return (
-    <main className="main dark:bg-pri-fader transition-all duration-500 pt-26">
+    <main className="main dark:bg-pri-fader pt-26 mlg:py-24 py-12 px-12 bg-background dark:bg-dark-background transition-colors duration-500">
       <Header>Projects</Header>
-      <div className="w-full h-full flex flex-col gap-12">
-        {projects.map((project) => {
-          return <Project project={project} key={project.id} />;
+      <div className="mt-16 flex flex-col gap-24 md:gap-32">
+        {projects.map((project, index) => {
+          return (
+            <Project
+              project={project}
+              key={project.id}
+              isEven={index % 2 === 0}
+            />
+          );
         })}
       </div>
       <p className="text-center mb-10 text-accent dark:text-dark-accent m-6 text-sm">

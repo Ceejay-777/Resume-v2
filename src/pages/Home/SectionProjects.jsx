@@ -4,12 +4,18 @@ import { projects } from "../../data";
 
 const SectionProjects = () => {
   return (
-    <section className="bg-background dark:bg-dark-background transition-all duration-500">
-      <Header>Projects</Header>
-      <div className="w-full h-full flex flex-col gap-12">
-        {projects.map((project) => {
-          return <Project project={project} key={project.id} />;
-        })}
+    <section className="mt-12 mlg:py-24 py-12 px-12 bg-background dark:bg-dark-background transition-colors duration-500">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <Header>Showcase</Header>
+        <div className="mt-16 flex flex-col gap-24 md:gap-32">
+          {projects.map((project, index) => (
+            <Project
+              project={project}
+              key={project.id}
+              isEven={index % 2 === 0}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,12 +1,22 @@
-import React from "react";
-
-const SocialIcon = ({ ref, icon, account }) => {
+const SocialIcon = ({ href, icon, account }) => {
   return (
-    <div className="p-2 md:p-4 bg-secondary dark:bg-dark-secondary rounded-full hover:scale-110 transition duration-200 w-fit">
-      <a href={ref} target="_blank">
-        <img src={icon} alt={`${account} icon`} className="w-6 md:w-8" />
-      </a>
-    </div>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative flex items-center justify-center p-3 md:p-4 
+                 bg-accent/5 dark:bg-white/5 
+                 border border-accent/10 dark:border-white/10 
+                 rounded-full transition-all duration-300 
+                 hover:border-sec hover:bg-sec/10 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <img
+        src={icon}
+        alt={account}
+        className="w-5 h-5 md:w-6 md:h-6 opacity-70 group-hover:opacity-100 transition-all 
+                   dark:invert" // This flips black icons to white in dark mode
+      />
+    </a>
   );
 };
 

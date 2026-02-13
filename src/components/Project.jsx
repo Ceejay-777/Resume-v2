@@ -1,21 +1,24 @@
-import { useState, useRef, useEffect } from "react";
 import Skillbar from "./Skillbar.jsx";
-import { motion } from "framer-motion";
-import { Link } from "lucide-react";
 
-const Project = ({ project }) => {
+const Project = ({ project, isEven }) => {
   const { name, image, info, skills, link } = project;
 
   return (
-    <div className="px-12 flex flex-col md:flex-row gap-6 items-center max-w-[1440px] mx-auto justify-around">
+    <div
+      className={`flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"} gap-12 items-center justify-between`}
+    >
       <a
-        href={link}
+        href={link ? link : undefined}
         target="_blank"
-        className="md:w-[55%] rounded-xl border border-complementary/20 h-fit max-w-[600px] project relative overflow-hidden shadow-sm"
+        rel="noopener noreferrer"
+        className="group relative w-full md:w-[55%] aspect-video rounded-2xl overflow-hidden border border-accent/10 dark:border-white/10 bg-secondary/30 shadow-2xl transition-transform duration-500 hover:-translate-y-2  project"
       >
-        <div className="">
-          <img src={image} alt="Project" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sec/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
       </a>
 
       <ProjectInfo name={name} info={info} skills={skills} link={link} />
@@ -27,9 +30,17 @@ export default Project;
 
 const ProjectInfo = ({ name, info, skills, link }) => {
   return (
-    <div className="md:w-2/5 flex flex-col gap-4 ">
-      <h2 className="text-2xl font-bold font-heading">{name}</h2>
-      <p className="text-sm ">{info}</p>
+    <div className="w-full md:w-[40%] flex flex-col gap-6">
+      <div className="space-y-2">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-accent dark:text-white">
+          {name}
+        </h2>
+        <div className="h-1 w-12 bg-sec rounded-full" />
+      </div>
+
+      <p className="text-base md:text-lg text-accent/70 dark:text-dark-accent/80 leading-relaxed text-pretty">
+        {info}
+      </p>
 
       <Skillbar skills={skills} link={link} />
     </div>

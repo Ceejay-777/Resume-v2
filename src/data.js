@@ -4,12 +4,11 @@ import Xlogo from "./assets/Icons/Xlogo.svg";
 import linkedin from "./assets/Icons/linkedin.svg";
 import phone from "./assets/Icons/phone.svg";
 
-import portfolio from "./assets/Project_images/resumedesktop.png";
-import gridale from "./assets/Project_images/gridale.png";
 import learnexo from "./assets/Project_images/learnexo.png";
 import docuhealth from "./assets/Project_images/docuhealth.png";
-import chainagents from "./assets/Project_images/chainagents.png";
 import ssrllabapp from "./assets/Project_images/ssrllabapp.png";
+import hackathon from "./assets/Project_images/hackathon.png";
+import fowgate from "./assets/Project_images/fowgate.png";
 
 import {
   Next,
@@ -29,62 +28,65 @@ import {
 export const projects = [
   {
     id: 1,
-    name: "DocuHealth",
-    stack: "Backend",
+    name: "DocuHealth Pharmacy API",
+    stack: "Lead Backend Engineer",
     image: docuhealth,
-    info: "A secure hospital records API with patient onboarding, file uploads, and subscription management. Powers a real health platform adopted by over 500 users and the Osun State Government.",
-    skills: ["Django", "PostgreSQL", "JWT", "Paystack", "Cloudinary"],
+    info: "Architected a secure medical infrastructure featuring Role-Based Access Control (RBAC) for hospital admins and patients. Implemented E2E data encryption and Paystack integration with idempotent webhooks to ensure transaction integrity for 500+ users.",
+    skills: ["Django DRF", "PostgreSQL", "RBAC", "Paystack", "E2E Encryption"],
     link: "https://www.docuhealthservices.com",
   },
-
   {
     id: 2,
-    name: "LearNEXO",
-    stack: "Fullstack",
-    image: learnexo,
-    info: "An AI-powered learning platform for high school students in Nigeria, delivering personalized lessons and tracking progress through a fullstack dashboard and device sync.",
-    skills: ["React", "Node", "TypeScript", "Flask", "MongoDB", "AI"],
-    link: "https://www.learnexo.vercel.app/",
+    name: "Splitpay",
+    stack: "Team Lead",
+    image: hackathon,
+    info: "Led a team of 3 to 1st place at the Squad Hackathon. Developed a money management tool using the Squad API for virtual account generation and real-time transaction monitoring to ensure seamless financial discipline.",
+    skills: ["Next.js", "Node.js", "TypeScript", "Squad API"],
+    link: "https://tribuneonlineng.com/how-we-built-solution-that-improves-financial-inclusion-makes-budgeting-easier-winners-of-habaripays-squad-hackathon-contest/",
   },
-
   {
     id: 3,
-    name: "SSRL Intern App",
-    stack: "Fullstack",
-    image: ssrllabapp,
-    info: "A personnel and intern management system built for Smart Systems Research Lab to streamline onboarding, report submission, and admin tracking.",
-    skills: ["React", "Flask", "MongoDB", "Redux"],
-    link: "https://www.ssrl-lab-app.vercel.app",
+    name: "Fowgate Multi-Sector ERP",
+    stack: "Lead Backend Developer",
+    status: "In Development",
+    image: fowgate, 
+    info: "Building the core engine for a multi-sector ERP using Flask and MongoDB. Architected a RAG-based AI system for legal document querying and developed custom OAuth2 flows for automated Google/Zoom scheduling with persistent credential management.",
+    skills: [
+      "Flask",
+      "MongoDB",
+      "Gemini Flash 2.0",
+      "Pinecone",
+      "OAuth2",
+      "RESTful API",
+    ],
+    link: false,
   },
-
   {
     id: 4,
-    name: "Gridale",
-    stack: "Frontend",
-    image: gridale,
-    info: "A fast-paced puzzle game where players click matching colors before time runs out. Includes score tracking, difficulty scaling, and saved high scores.",
-    skills: ["Reac", "Tailwind", "Redux"],
-    link: "https://www.gridale.vercel.app",
+    name: "SSRL Lab Management",
+    stack: "Software Team Lead",
+    image: ssrllabapp,
+    info: "Directing a team of interns at the Smart Systems Research Laboratory to build internal research tools. Focused on transforming complex research requirements into maintainable React patterns and polished UIs.",
+    skills: ["React", "TypeScript", "Custom Hooks", "Component Atomicity"],
+    link: false,
   },
-
-  {
-    id: 5,
-    name: "My portfolio",
-    stack: "Frontend",
-    image: portfolio,
-    info: "A dynamic developer portfolio with theme toggles, animations, and smooth transitions showcasing projects, skills, and personal highlights in a performant, responsive layout.",
-    skills: ["React", "Tailwind", "Framer Motion", "TypeScript"],
-    link: "https://www.ceejaydacodefadav2.vercel.app",
-  },
-
+  // {
+  //   id: 5,
+  //   name: "Futaverse",
+  //   stack: "Lead Backend Engineer",
+  //   image: futaverse_image, // Note: High-impact project from CV
+  //   info: "Engineered a comprehensive ticketing system for alumni events. Implemented multi-tier Paystack integration, automated invoicing, and secured the platform using Sqids (ID Masking) to prevent ticket scraping.",
+  //   skills: ["Python", "Django DRF", "Supabase", "Celery", "Sqids"],
+  //   link: "https://futaverse.example.com",
+  // },
   {
     id: 6,
-    name: "Chain Agents",
-    stack: "Frontend",
-    image: chainagents,
-    info: "A sleek landing site for a crypto token project, featuring tokenomics, whitepaper, and animated sections to explain the ecosystem and build community trust.",
-    skills: ["ReactJS", "Tailwind", "JavaScript", "Git", "Redux"],
-    link: "https://www.changeagents.vercel.app/",
+    name: "LearNexo",
+    stack: "Fullstack Developer",
+    image: learnexo,
+    info: "Built a personalized Edutech platform focused on distraction-free learning environments. Engineered complex multi-step onboarding workflows using React Hook Form and Zod for rigorous validation.",
+    skills: ["React", "TypeScript", "Zod", "Tanstack Query"],
+    link: false,
   },
 ];
 
@@ -112,39 +114,56 @@ export const socialLinks = [
         account: "linkedin",
       },
       { icon: github, ref: "https://github.com/Ceejay-777", account: "github" },
-      { icon: Xlogo, ref: "https://twitter.com/Cee_Jay_777", account: "X" },
+      { icon: Xlogo, ref: "https://x.com/daCodeFada", account: "X" },
     ],
   },
 ];
 
 export const experiences = [
   {
-    title: "Backend Team Lead",
+    title: "Lead Backend Developer",
+    company: "Fowgate LLC",
+    location: "Remote",
+    date: "Feb 2025 — Present",
+    highlights: [
+      "Solely architected a modular, microservices-ready backend for a multi-sector ERP using Flask and MongoDB[cite: 19].",
+      "Engineered a RAG-based AI assistant using Gemini Flash 2.0 and Pinecone for semantic querying of legal documents like the PIA.",
+      "Developed complex OAuth2 flows for Google and Zoom with custom token refresh logic and persistent credential management[cite: 21].",
+      "Directing a team of 4 engineers, enforcing GitFlow, design guides, and comprehensive Swagger documentation.",
+    ],
+  },
+  {
+    title: "Lead Backend Developer",
     company: "DocuHealth Services",
-    date: "Dec 2024 - Present",
-    duty: "At DocuHealth, I lead backend development for a hospital record platform adopted by over 500 users and the Osun State Government. I designed and implemented secure Django APIs for managing hospital and patient data, built JWT-based authentication with role-based access, and integrated MongoDB for optimized data retrieval. I also handled Paystack subscriptions and Cloudinary asset management, collaborating closely with frontend engineers to ensure seamless integration.",
-  },
-
-  {
-    title: "Fullstack Developer",
-    company: "Fowgate Corporation",
-    date: "Feb 2024 - Present",
-    duty: "I'm building a modular ERP system used by multiple Nigerian enterprises. I architected reusable database logic via a shared BaseDB class and designed flexible MongoDB schemas to support nested accounts, subscriptions, and notifications. I also integrated AI-driven document intelligence using RAG and designed Swagger-documented REST APIs for smooth collaboration with frontend teams.",
-  },
-
-  {
-    title: "Software Lead (Intern)",
-    company: "Smart Systems Research Lab",
-    location: "Ado-Ekiti, Ekiti State",
-    date: "Apr 2023 - Present",
-    duty: "As part of an agile research team, I led the design and development of an internal intern management system for the lab. I built reusable React components, implemented local routing for a seamless UX, and wrote backend APIs using Flask for user and report workflows. I managed Git-based version control and coordinated sprint planning with other team leads.",
+    location: "Remote",
+    date: "Dec 2024 — Present",
+    highlights: [
+      "Designed and implemented secure RESTful APIs using Django DRF with End-to-End data encryption for 500+ users[cite: 25, 26].",
+      "Engineered Role-Based Access Control (RBAC) for Hospital Admins, Staff, and Patients[cite: 27].",
+      "Integrated Paystack for subscription management with idempotent webhooks to ensure transaction integrity[cite: 28].",
+      "Optimized PostgreSQL database performance through efficient indexing and atomic transaction management[cite: 29].",
+    ],
   },
   {
-    title: "Frontend Developer (Intern)",
+    title: "Software Team Lead",
+    company: "Smart Systems Research Laboratory",
+    location: "FUTA",
+    date: "Apr 2024 — Present",
+    highlights: [
+      "Directing a team of interns in building internal tools, specializing in transforming research requirements into polished UIs[cite: 39].",
+      "Mentoring junior developers on frontend best practices, component atomicity, and custom hook patterns[cite: 40].",
+      "Managed the transition of legacy UI modules to modern React patterns for better scalability[cite: 41].",
+    ],
+  },
+  {
+    title: "Frontend Intern",
     company: "Kinplus Technologies",
-    location: "Ado-Ekiti, Ekiti State",
-    date: "Apr 2023 - April 2024",
-    duty: "At Kinplus, I developed production-ready frontend components with a focus on responsiveness and accessibility. I collaborated with backend engineers to integrate RESTful APIs, debugged JavaScript logic and layout issues, and helped streamline frontend delivery workflows. The experience gave me hands-on exposure to agile processes, team velocity, and real-world client delivery standards.",
+    location: "Ekiti, Nigeria",
+    date: "Apr 2023 — July 2023",
+    highlights: [
+      "Delivered production-ready UI components with a focus on cross-browser compatibility and accessibility[cite: 46].",
+      "Collaborated with backend engineers to integrate RESTful workflows and resolved complex layout issues[cite: 47].",
+    ],
   },
 ];
 

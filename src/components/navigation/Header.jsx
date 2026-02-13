@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react";
-import Sidebar from "./Sidebar.jsx";
-import Hamburger from "./Hamburger.jsx";
 import Theme from "../ui/ThemeSwitch.jsx";
 import Download from "../ui/Download.jsx";
 import Navbar from "./Navbar.jsx";
@@ -14,7 +11,7 @@ const Header = () => {
         <Theme />
       </div>
       <div className="flex items-center">
-        <Navbar />
+        {/* <Navbar /> */}
         <Download />
       </div>
     </div>

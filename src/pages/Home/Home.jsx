@@ -5,7 +5,7 @@ import SectionProjects from "./SectionProjects";
 
 const Home = () => {
   return (
-    <main className="max-w-screen flex flex-col gap-12">
+    <main className="flex flex-col gap-12">
       <SectionIntro />
       <SectionSkillset />
       <SectionProjects />
